@@ -1,0 +1,20 @@
+{
+  "status": "FROZEN_FOR_EXECUTION",
+  "registered_at_unix": 1789475758.010353,
+  "deadline_unix": 1789481138.7053843,
+  "source_clip": "2_Comb_hair/1/1-1-1",
+  "data_root": "D:/Datasets/CUHK-X_Small_Model_Track/Small-Model-Track",
+  "no_GPU": true,
+  "no_Test": true,
+  "bindings": {
+    "C:\\Users\\\u8d3e\u745e\u6db5\\Documents\\learning\\CUHK\u2014\u2014X small_model\\runs\\cloud_rethink_20260914\\v2_weight_average_production\\protocol.json": "1b025bd0229b935e285db8202ff7620cabf3bcc93234d2cf63b79de192f56325",
+    "C:\\Users\\\u8d3e\u745e\u6db5\\Documents\\learning\\CUHK\u2014\u2014X small_model\\runs\\cloud_rethink_20260914\\v2_weight_average_production\\source_qa.py": "070f5ed3c0c3e179fee777f1a7c14145ab3e539949ddf69041db19373672e44c",
+    "C:\\Users\\\u8d3e\u745e\u6db5\\Documents\\learning\\CUHK\u2014\u2014X small_model\\runs\\cloud_rethink_20260914\\v2_weight_average_production\\CALIBRATION_RESULT.json": "5ebd92c9f32c5486736f6cd036c37217612137192628621782a851112f118c1e",
+    "C:\\Users\\\u8d3e\u745e\u6db5\\Documents\\learning\\CUHK\u2014\u2014X small_model\\deliverables\\videomaev2_weight_average_candidate_20260915\\infer.py": "1a6d65497c04eeb888dd1242b2f2df54dfec9c136941941c5f58421bb6dd7012",
+    "C:\\Users\\\u8d3e\u745e\u6db5\\Documents\\learning\\CUHK\u2014\u2014X small_model\\deliverables\\videomaev2_weight_average_candidate_20260915\\release.json": "f6f827158dd0daf18f845012afb78d0d1eedd2bd582d0dc3395d5515f2f3c167",
+    "C:\\Users\\\u8d3e\u745e\u6db5\\Documents\\learning\\CUHK\u2014\u2014X small_model\\deliverables\\videomaev2_weight_average_candidate_20260915\\checkpoints\\B.pt": "1bfa12eefa2499026f42b4764c8457e2cfc4ed0b86264ceaa8cd146ee62d296f",
+    "C:\\Users\\\u8d3e\u745e\u6db5\\Documents\\learning\\CUHK\u2014\u2014X small_model\\deliverables\\videomaev2_weight_average_candidate_20260915\\calibrator.json": "c6d579fa3dba06a51eb986313b14ce529027c9fb6d2d59368fb90b32e8de2eb6",
+    "C:\\Users\\\u8d3e\u745e\u6db5\\Documents\\learning\\CUHK\u2014\u2014X small_model\\runs\\cloud_rethink_20260914\\videomaev2_base\\model.py": "7a0cd042c729022e0b200d7885ed00a9e11fb0a9264f0a4006bab342475d9c3c",
+    "C:\\Users\\\u8d3e\u745e\u6db5\\Documents\\learning\\CUHK\u2014\u2014X small_model\\runs\\error_resolution_20260913\\POSE_ADAPTER_INPUTS.json": "f302ba5c3e56667017a5c22a08c3c78b1f39df8ff07896ee6b8adff3bf98eb21"
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "status": "PASS_MIRROR_DUAL_SOURCE_PIXELS_AND_LOGITS",
+  "rows": [
+    "0_Wash_face/4/1-1-1"
+  ],
+  "container": {
+    "path": "C:\\Users\\贾瑞涵\\Documents\\learning\\CUHK——X small_model\\runs\\cloud_rethink_20260914\\v2_base6_small8_source_completion\\containers\\V2_BASE_SOURCE_F3_INNER2.bin",
+    "sha256": "1893467aaec1afd8d9075e4716f3e4e3673cce3732042a46ddba8e5f90e57589",
+    "bytes": 87303679
+  },
+  "cases": [
+    {
+      "no_roi": false,
+      "pixels_mirror_numpy_exact": true,
+      "double_flip_exact": true,
+      "shape": [
+        7,
+        3,
+        16,
+        224,
+        224
+      ],
+      "Base": {
+        "source_release_original_maxabs": 0.0,
+        "source_release_mirror_maxabs": 0.0,
+        "mirror_output_changes": 0.16822627186775208,
+        "state_tensors": 162
+      },
+      "Small": {
+        "source_release_original_maxabs": 0.0,
+        "source_release_mirror_maxabs": 0.0,
+        "mirror_output_changes": 0.2345573604106903,
+        "state_tensors": 162
+      }
+    },
+    {
+      "no_roi": true,
+      "pixels_mirror_numpy_exact": true,
+      "double_flip_exact": true,
+      "shape": [
+        7,
+        3,
+        16,
+        224,
+        224
+      ]
+    }
+  ],
+  "optimizer_updates": 0,
+  "no_Test": true,
+  "seconds": 13.138458967208862,
+  "at_unix": 1789484461.2405918
+}

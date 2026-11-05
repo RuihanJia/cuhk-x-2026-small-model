@@ -1,0 +1,21 @@
+{
+  "status": "FROZEN_FOR_EXECUTION",
+  "registered_at_unix": 1789453280.8425958,
+  "deadline_unix": 1789453520.8425958,
+  "cpu_fit_seconds": 180,
+  "source_npz": "runs\\cloud_rethink_20260914\\videomaev2_base_fusion\\output\\SOURCE_FITTED.npz",
+  "base_source_npz": "runs\\noon_push_20260914\\production_meta_input\\source_oof_v2.npz",
+  "bindings": {
+    "runs\\cloud_rethink_20260914\\videomaev2_base_calibration\\worker.py": "1512c75a3827e97efb89a935ec4a5b297663a0680d4714a82c39a24725b65da9",
+    "runs\\cloud_rethink_20260914\\frozen_fusion_math.py": "449ff128bb6732ff08e5932396507403c7e5acf832b8696e4f2178ec7a88961a",
+    "runs\\cloud_rethink_20260914\\videomaev2_base_fusion\\classwise3.py": "6fbca9e30fad078a23b5f1b3ce69c156c31e768cbd083b163d113864139fbe3b",
+    "runs\\cloud_rethink_20260914\\videomaev2_base_fusion\\output\\SOURCE_FITTED.npz": "44da22f9647a7919f4ebc249fe9f3c209b4987853d7ea3f60d64ba04aa13d1f8",
+    "runs\\noon_push_20260914\\production_meta_input\\source_oof_v2.npz": "343ef60c8677d92a92323bfa51bd258d6310fc758bc5c1a2853563a46232221e",
+    "runs\\cloud_rethink_20260914\\videomaev2_base_fusion\\output\\DONE.json": "37f23df0f5b24e2bfe7d6d3acefc94ca55409f26ed44f3f59f3b35871f2e5ba7"
+  },
+  "hypothesis": "Fit selected three-branch calibrated classifier to all already source-isolated predictions, using same fixed500 global and optional fixed0.1 classwise mechanism. No new candidate scan, outer labels never used in fitting.",
+  "selected": "classwise3",
+  "fit_count": 2,
+  "optimizer": "FP64_LBFGS500_userbalanced",
+  "no_Test": true
+}

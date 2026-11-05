@@ -1,0 +1,26 @@
+{
+  "validation_date": "2026-10-30",
+  "method": "Raw-input inference in an isolated Linux network namespace",
+  "platform": {
+    "os": "Ubuntu 24.04 x86_64 / WSL2",
+    "python": "3.12",
+    "torch": "2.12.1+cu130",
+    "gpu": "RTX 4070 Laptop 8 GB"
+  },
+  "results": [
+    {
+      "solution": "dual_mirror",
+      "status": "PASS_BYTE_IDENTICAL",
+      "rows": 405,
+      "sha256": "0eda9483701b92a25ccc8cce284acf4b12cf2af4df974ede4f425461091210fc",
+      "elapsed_seconds": 476.4468903541565
+    },
+    {
+      "solution": "weight_average",
+      "status": "PASS_BYTE_IDENTICAL",
+      "rows": 405,
+      "sha256": "8eff0fd318b966dfa420e92040a7351715f504a46c5cf0c5cec40b55b65f1c2d",
+      "elapsed_seconds": 313.5659091472626
+    }
+  ]
+}

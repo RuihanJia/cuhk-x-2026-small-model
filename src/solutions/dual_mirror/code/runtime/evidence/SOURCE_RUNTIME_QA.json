@@ -1,0 +1,28 @@
+{
+  "status": "PASS_V2_BASE_SOURCE_CPU_RUNTIME_PARITY",
+  "protocol_sha256": "0a7989e5042cacd130a7d0a8d4eaab2fda411094713d5d41afcbb93e6e6049c3",
+  "worker_sha256": "3a89efe85817116b82ff5a1f340c94032048d3393f1f6348260c7816ff15bb43",
+  "checks": [
+    {
+      "source_clip": "0_Wash_face/4/1-1-1",
+      "missing_pose_box": false,
+      "input_tensors_exact": true,
+      "logit_max_abs": 0.0,
+      "argmax_equal": true
+    },
+    {
+      "source_clip": "0_Wash_face/4/1-1-1",
+      "missing_pose_box": true,
+      "input_tensors_exact": true,
+      "logit_max_abs": 0.0,
+      "argmax_equal": true
+    }
+  ],
+  "full_model_all_state_tensors_exact": true,
+  "all50quant_weights_reloaded": true,
+  "no_Test": true,
+  "no_GPU": true,
+  "optimizer_updates": 0,
+  "seconds": 41.621294021606445,
+  "at_unix": 1789452939.83216
+}

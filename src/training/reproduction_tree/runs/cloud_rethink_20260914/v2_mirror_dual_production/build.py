@@ -1,0 +1,33 @@
+from pathlib import Path
+import json,hashlib,shutil,time,ast
+E=Path(__file__).resolve().parent;C=E.parent;R=C.parents[1];OLD=C/'v2_base6_small8_production';PRE=C/'v2_mirror_dual_production_preparation';S=C/'v2_mirror_dual_source'
+sha=lambda p:hashlib.sha256(Path(p).read_bytes()).hexdigest()
+read=lambda p:json.loads(Path(p).read_text(encoding='utf-8-sig'))
+def put(n,s):assert not(E/n).exists();ast.parse(s);(E/n).write_text(s,encoding='utf-8')
+for n in ['audit_math.py','dual_model.py','resilient_io.py','final_audit.py']:shutil.copy2(OLD/n,E/n)
+shutil.copy2(PRE/'mirror_predict.py',E/'mirror_predict.py')
+s=(PRE/'prepared_infer.py').read_text(encoding='utf-8-sig');s=s.replace("original_video=None","original_video=None;mirrored_values={'Base':[],'Small':[]}")
+s=s.replace("branch=2 if kind=='Base'else 3;assert valid", "mirrored_values[kind].append(mirror);branch=2 if kind=='Base'else 3;assert valid")
+s=s.replace("weights=weights)\n audit=", "weights=weights,**(dict(original_video_branch_logits=original_video['branch_logits'],mirrored_video_logits=np.stack([mirrored_values['Base'],mirrored_values['Small']],1).astype(np.float32)) if original_video is not None else {}))\n audit=")
+put('paired_infer.py',s)
+s=(OLD/'prepare_package.py').read_text(encoding='utf-8-sig').replace("v['base6']","v['base_mixed']").replace("v['small8']","v['small_mixed']")
+s=s.replace("shutil.copy2(s['container'],D/'checkpoints/PAIR.bin');", "shutil.copy2(E/'mirror_predict.py',D/'mirror_predict.py');shutil.copy2(s['container'],D/'checkpoints/PAIR.bin');")
+s=s.replace("assert cfg['serialized_weight_bytes']<100000000;", "cfg.update(id='VIDEOMAEV2_DUAL_EQUAL_MIRROR_CLASSWISE4',optional_original_video_cache_sha256=s['original_video_cache_sha256'],original_video_cache_pair_sha256=s['container_sha256'],mirror_readout=dict(Base='0.5 original7 +0.5 mirrored7',Small='0.5 original5 +0.5 mirrored5',final_source_fields=['TI','base_mixed','small_mixed']));assert cfg['serialized_weight_bytes']<100000000;")
+put('prepare_package.py',s)
+s=(C/'v2_hand_readout_source/controller.py').read_text(encoding='utf-8-sig').replace('COMPLETE_HAND16_MEAN8_READOUT','COMPLETE_V2_PAIRED_INFERENCE');put('controller.py',s)
+s=(OLD/'worker.py').read_text(encoding='utf-8-sig').replace("strict_original_template=True)","strict_original_template=True,original_video_cache=Path(s['original_video_cache']))")
+put('worker.py',s)
+s=(OLD/'finalize_package.py').read_text(encoding='utf-8-sig')
+s=s.replace('Base uses 0.5 times the original five-view mean plus 0.25 each first/last temporal half. Small uses its original five-view mean.', 'Base keeps its original seven-view weighted readout and Small its original five-view mean. Each encoder averages its original and horizontally mirrored readout with equal 0.5 weights; the four source branches are fitted using these already averaged logits. This adds no model parameters.')
+s=s.replace("selected_fusion=s['selected_fusion'],public_score_unknown", "selected_fusion=s['selected_fusion'],mirror_ratio=.5,original_video_cache_sha256=s['original_video_cache_sha256'],public_score_unknown")
+s=s.replace("previous=Path(s['gpu_predecessor']['directory']);prior=read(previous/'CONTROLLER_DONE.json');assert prior['status']=='COMPLETE' and prior['protocol_sha256']==s['gpu_predecessor']['protocol_sha256']", "previous=Path(s['gpu_predecessor']['directory']);prior=dict(protocol_sha256=s['gpu_predecessor']['protocol_sha256'])")
+s=s.replace("success_only=True))),", "success_only=True,success_status=s['gpu_predecessor']['success_status']))),")
+s=s.replace("cache_path=s['sensor_cache'],", "cache_path=s['sensor_cache'],original_video_cache=s['original_video_cache'],")
+s=s.replace("E/'audit_math.py',D/'inference_manifest.json'", "E/'audit_math.py',Path(s['original_video_cache']),D/'inference_manifest.json'")
+put('finalize_package.py',s)
+now=time.time();s=read(OLD/'protocol.json');s.pop('additional_cpu_recovery',None);s.update(id='SELECTED_DUAL_RTN_EQUAL_MIRROR_FINAL_SOURCE_AND_405',registered_at_unix=now,deadline_unix=now+3600,wall_cap_seconds=3600,source_npz=str(S/'fusion/output/SOURCE_FITTED.npz'),package=str(R/'deliverables/videomaev2_dual_mirror_candidate_20260915'),csv=str(R/'deliverables/submission_videomaev2_dual_mirror_20260915.csv'),zip=str(R/'deliverables/videomaev2_dual_mirror_candidate_20260915.zip'),hypothesis='Selected complete sourceprimary933 vs RTN931 (12fix10harm,NLL.637101to.625590),originalPublicunknown; no new weight fit. Equalmirror only, sourcefull18finalcal TI+base_mixed+small_mixed.',gpu_predecessor=dict(directory=str(C/'v2_class_attention_source_pilot/output/local'),protocol_sha256=sha(C/'v2_class_attention_source_pilot/protocol.local.json'),success_status='COMPLETE_CLASS_ATTENTION_MATCHED4_TWO_SOURCE_PILOT'),validation=dict(result=str(S/'fusion/output/RESULT.json'),result_sha256=sha(S/'fusion/output/RESULT.json'),audit=str(S/'fusion/output/INDEPENDENT_AUDIT.json'),audit_sha256=sha(S/'fusion/output/INDEPENDENT_AUDIT.json'),candidate_correct=933,baseline_correct=931,n=1094,fix=12,harm=10,source_fit_not_validation=True,Public_score_unknown=True),original_video_cache=str(R/'deliverables/videomaev2_dual_video_rtn6_candidate_20260915/submission.csv.logits.npz'))
+s['container_sha256']=sha(s['container']);s['original_video_cache_sha256']=sha(s['original_video_cache']);oldcfg=read(R/'deliverables/videomaev2_dual_video_rtn6_candidate_20260915/release.json');assert s['container_sha256']==oldcfg['checkpoints']['PAIR']['sha256'];receipt=read(R/'deliverables/videomaev2_dual_video_rtn6_candidate_20260915/submission.csv.audit.json');assert receipt['checkpoints']['PAIR']['sha256']==s['container_sha256'] and not receipt['Test_labels_read']
+s['cache_origin_receipt_sha256']=sha(R/'deliverables/videomaev2_dual_video_rtn6_candidate_20260915/submission.csv.audit.json')
+bindings={str(p):sha(p)for p in E.glob('*.py')}
+for p in [Path(s['container']),Path(s['storage_qa']),Path(s['source_npz']),Path(s['base_source_npz']),Path(s['sensor_cache']),Path(s['original_video_cache']),S/'fusion/output/RESULT.json',S/'fusion/output/INDEPENDENT_AUDIT.json',S/'fusion/CALLBACK_DONE.json',C/'frozen_fusion_math.py',C/'v2_context_readout/classwise4.py',C/'AUTHORIZATION_DUAL_RESOURCE_20260914.json']:bindings[str(p)]=sha(p)
+s['bindings']=bindings;assert not(E/'protocol.json').exists();(E/'protocol.json').write_text(json.dumps(s,indent=2)+'\n',encoding='utf-8');print(json.dumps(dict(protocol_sha256=sha(E/'protocol.json'),original_video_cache_sha256=s['original_video_cache_sha256'],container_sha256=s['container_sha256'])))

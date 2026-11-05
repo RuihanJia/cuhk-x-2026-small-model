@@ -1,0 +1,70 @@
+{
+  "status": "FROZEN_FOR_EXECUTION",
+  "id": "BASE_MICRO4_8_SAME_SOURCE_GRADIENT_CAPACITY_QA",
+  "registered_at_unix": 1789449088.2300978,
+  "deadline_unix": 1789449388.2300978,
+  "wall_cap_seconds": 240,
+  "hosts": {
+    "local": {
+      "output_directory": "C:\\Users\\\u8d3e\u745e\u6db5\\Documents\\learning\\CUHK\u2014\u2014X small_model\\runs\\cloud_rethink_20260914\\videomaev2_base\\gpu_qa\\local",
+      "wall_cap_seconds": 240,
+      "workers": 4,
+      "micro_clips": 4,
+      "eval_micro": 4,
+      "data_root": "D:/Datasets/CUHK-X_Small_Model_Track/Small-Model-Track",
+      "pose_inputs": "C:\\Users\\\u8d3e\u745e\u6db5\\Documents\\learning\\CUHK\u2014\u2014X small_model\\runs\\error_resolution_20260913\\POSE_ADAPTER_INPUTS.json",
+      "original_protocol": "C:\\Users\\\u8d3e\u745e\u6db5\\Documents\\learning\\CUHK\u2014\u2014X small_model\\runs\\error_resolution_20260913\\POSE_ADAPTER_PROTOCOL.json",
+      "authorization_file": "C:\\Users\\\u8d3e\u745e\u6db5\\Documents\\learning\\CUHK\u2014\u2014X small_model\\runs\\cloud_rethink_20260914\\AUTHORIZATION_DUAL_RESOURCE_20260914.json",
+      "input_bindings": {
+        "C:\\Users\\\u8d3e\u745e\u6db5\\Documents\\learning\\CUHK\u2014\u2014X small_model\\runs\\error_resolution_20260913\\POSE_ADAPTER_INPUTS.json": "f302ba5c3e56667017a5c22a08c3c78b1f39df8ff07896ee6b8adff3bf98eb21",
+        "C:\\Users\\\u8d3e\u745e\u6db5\\Documents\\learning\\CUHK\u2014\u2014X small_model\\runs\\error_resolution_20260913\\POSE_ADAPTER_PROTOCOL.json": "4ed62e67b16bfb97e799443b5a6364354173465cf7599e6b833d0285f60441e0",
+        "C:\\Users\\\u8d3e\u745e\u6db5\\Documents\\learning\\CUHK\u2014\u2014X small_model\\runs\\cloud_rethink_20260914\\AUTHORIZATION_DUAL_RESOURCE_20260914.json": "7b3fa7a606709e42bf78597d31f133fa88daddc2c7f970d69a7a184c5d197ef7",
+        "C:\\Users\\\u8d3e\u745e\u6db5\\Documents\\learning\\CUHK\u2014\u2014X small_model\\runs\\error_resolution_20260913\\pose_view_data.py": "b7fdcc001f09a18e5c77e8852bf4274506322076ed0cd527c141a7d5bfaa6a3f",
+        "C:\\Users\\\u8d3e\u745e\u6db5\\Documents\\learning\\CUHK\u2014\u2014X small_model\\runs\\error_resolution_20260913\\bundle\\activity_view_data.py": "62af5c595308d110bda8d5f798e838d4da4a1b8b57bc46357ae0564ce7e6be0f",
+        "C:\\Users\\\u8d3e\u745e\u6db5\\Documents\\learning\\CUHK\u2014\u2014X small_model\\runs\\error_resolution_20260913\\bundle\\motion_video_runtime\\__init__.py": "0f780850ed074f04e7ace53ffc19d98b8ce6631baf62ad14d7a8cf7a05815c31",
+        "C:\\Users\\\u8d3e\u745e\u6db5\\Documents\\learning\\CUHK\u2014\u2014X small_model\\runs\\error_resolution_20260913\\bundle\\motion_video_runtime\\data.py": "0711128f0553cca0f5ab11d739693975d36a6ce3eb6a01fca4af866f3a13eec2",
+        "C:\\Users\\\u8d3e\u745e\u6db5\\Documents\\learning\\CUHK\u2014\u2014X small_model\\runs\\error_resolution_20260913\\bundle\\research_runtime\\common.py": "39db2ac69d62c2876a35da4b34f770ceffb1a85a2d3181523a1d818509829c46",
+        "C:\\Users\\\u8d3e\u745e\u6db5\\Documents\\learning\\CUHK\u2014\u2014X small_model\\runs\\error_resolution_20260913\\bundle\\dual_host_runtime\\__init__.py": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+        "C:\\Users\\\u8d3e\u745e\u6db5\\Documents\\learning\\CUHK\u2014\u2014X small_model\\runs\\error_resolution_20260913\\bundle\\dual_host_runtime\\io.py": "f52b1e84a4398331fb735e40f34c0adefddb5842883f6482189941c877bf9ac2",
+        "C:\\Users\\\u8d3e\u745e\u6db5\\Documents\\learning\\CUHK\u2014\u2014X small_model\\runs\\error_resolution_20260913\\bundle\\dual_host_runtime\\health.py": "c20f0151f184d0b82c52b77c7c111780cba7ad46959b0b9f6644e3cb09db0c82",
+        "C:\\Users\\\u8d3e\u745e\u6db5\\Documents\\learning\\CUHK\u2014\u2014X small_model\\CORE_EVIDENCE_LOCK.json": "5b162169e72624311bab549d4f1a479e9378d97d3a156db6eb135850a2b7248a",
+        "C:\\Users\\\u8d3e\u745e\u6db5\\Documents\\learning\\CUHK\u2014\u2014X small_model\\CORE_RULES_EVIDENCE.md": "72296735082407ee9692a5aa8f8dc9a2f3b8473289233fa21a6d5ba37b96fcbc",
+        "C:\\Users\\\u8d3e\u745e\u6db5\\Documents\\learning\\CUHK\u2014\u2014X small_model\\evidence\\rules\\ai_coding_assistance_host_clarification_20260903.png": "948163c3dd1050bc9a2b632c76b3e08f3b391bdbd8a943cae6553dbf8414f2c2",
+        "C:\\Users\\\u8d3e\u745e\u6db5\\Documents\\learning\\CUHK\u2014\u2014X small_model\\evidence\\rules\\ai_coding_assistance_host_clarification_20260903.json": "86b555b7ff0f15bfede99220f7369ba9b305b28deb97cbbfbac3f79a04b18d13",
+        "C:\\Users\\\u8d3e\u745e\u6db5\\Documents\\learning\\CUHK\u2014\u2014X small_model\\runs\\cloud_rethink_20260914\\videomaev2_small\\vit_s_k710_dl_from_giant.pth": "24fb71687fa3671b8387cadfbcbab0f72af695692e93cf1ecc82caa888626172",
+        "C:\\Users\\\u8d3e\u745e\u6db5\\Documents\\learning\\CUHK\u2014\u2014X small_model\\runs\\cloud_rethink_20260914\\videomaev2_small\\upstream_modeling_finetune.py": "ce9a11ff05c7a1b5085addf6c73b71ffb68933564164f7b250dedad91f6e29b8",
+        "C:\\Users\\\u8d3e\u745e\u6db5\\Documents\\learning\\CUHK\u2014\u2014X small_model\\runs\\cloud_rethink_20260914\\videomaev2_small\\upstream_LICENSE": "bc8f60ee50544b2dd70b4bc90e22de503aa23b317d284046a479811f2e06f396",
+        "C:\\Users\\\u8d3e\u745e\u6db5\\Documents\\learning\\CUHK\u2014\u2014X small_model\\runs\\cloud_rethink_20260914\\videomaev2_small\\source_v2.py": "e2662d2819645659a8b87f2b8880bd8558aa30eeb0a68bd67cffc182dce339c0",
+        "C:\\Users\\\u8d3e\u745e\u6db5\\Documents\\learning\\CUHK\u2014\u2014X small_model\\runs\\cloud_rethink_20260914\\videomaev2_small\\ADMISSION.json": "f21d6f7aa6b1afc6629466e0af936872f43b15b7c66100155b07551bab2780fd",
+        "C:\\Users\\\u8d3e\u745e\u6db5\\Documents\\learning\\CUHK\u2014\u2014X small_model\\runs\\cloud_rethink_20260914\\videomaev2_small\\output\\local\\model_fp16.pt": "158e7c228d0a0e747e05c432c5943f17176c0816ebae0605af68853cee92189b",
+        "C:\\Users\\\u8d3e\u745e\u6db5\\Documents\\learning\\CUHK\u2014\u2014X small_model\\runs\\cloud_rethink_20260914\\videomae_base_kinetics\\cloud\\BASE_K400_F3\\model_fp16.pt": "971dbfdf7ba245631358d028453fb3d34b75e44e482358e5e0077184ffc1ed23",
+        "C:\\Users\\\u8d3e\u745e\u6db5\\Documents\\learning\\CUHK\u2014\u2014X small_model\\runs\\cloud_rethink_20260914\\videomae_base_kinetics\\pytorch_model.bin": "f8462908e843373183868b89c56699f675839f1bebf43694a6c987c6df9d3ce4",
+        "C:\\Users\\\u8d3e\u745e\u6db5\\Documents\\learning\\CUHK\u2014\u2014X small_model\\runs\\cloud_rethink_20260914\\videomae_base_kinetics\\ADMISSION.json": "badc7f81b615af7c293383306b7d5a35f4e35be596fc2d6cf9a571468bd9b566",
+        "C:\\Users\\\u8d3e\u745e\u6db5\\Documents\\learning\\CUHK\u2014\u2014X small_model\\runs\\cloud_rethink_20260914\\videomae_base_kinetics\\upstream_modeling_finetune.py": "ce9a11ff05c7a1b5085addf6c73b71ffb68933564164f7b250dedad91f6e29b8",
+        "C:\\Users\\\u8d3e\u745e\u6db5\\Documents\\learning\\CUHK\u2014\u2014X small_model\\runs\\cloud_rethink_20260914\\videomae_base_kinetics\\upstream_LICENSE": "bc8f60ee50544b2dd70b4bc90e22de503aa23b317d284046a479811f2e06f396"
+      },
+      "predecessor": {
+        "directory": "C:\\Users\\\u8d3e\u745e\u6db5\\Documents\\learning\\CUHK\u2014\u2014X small_model\\runs\\cloud_rethink_20260914\\v2_base_kd_pilot\\output\\local",
+        "protocol_sha256": "a4b93647c9b7c8fc0d360b3646dae259f6d6973f36cf217bb3b310e7e372d8d7",
+        "success_only": true
+      }
+    }
+  },
+  "source_authorization_sha256": "7b3fa7a606709e42bf78597d31f133fa88daddc2c7f970d69a7a184c5d197ef7",
+  "worker_sha256": "647ea7b336931231cf0cf5c9cb983ce5921544fb03eec4c5d3aba98eed726f96",
+  "controller_sha256": "e2396730ed4619052c197055073db8fee1b25fb0aaaa3467c13d3ab24072e1b9",
+  "bindings": {
+    "runs/cloud_rethink_20260914/videomaev2_base/gpu_qa.py": "647ea7b336931231cf0cf5c9cb983ce5921544fb03eec4c5d3aba98eed726f96",
+    "runs/cloud_rethink_20260914/videomaev2_base/gpu_controller.py": "e2396730ed4619052c197055073db8fee1b25fb0aaaa3467c13d3ab24072e1b9",
+    "runs/cloud_rethink_20260914/videomaev2_base/resilient_io.py": "07fc8b86d4bda8526a73001b74f63a364552ab5c1b41598631c83764e2fedb3d",
+    "runs/cloud_rethink_20260914/videomaev2_base/model.py": "7a0cd042c729022e0b200d7885ed00a9e11fb0a9264f0a4006bab342475d9c3c",
+    "runs/cloud_rethink_20260914/videomaev2_base/vit_b_k710_dl_from_giant.pth": "8141a6955e0700d11bf15928fe6d61e5cfe482606fed8cfdddb1b922c0fd88ec",
+    "runs/error_resolution_20260913/POSE_ADAPTER_INPUTS.json": "f302ba5c3e56667017a5c22a08c3c78b1f39df8ff07896ee6b8adff3bf98eb21"
+  },
+  "source_clip": "0_Wash_face/4/1-1-1",
+  "data_root": "D:/Datasets/CUHK-X_Small_Model_Track/Small-Model-Track",
+  "memory_margin_limit_bytes": 7000000000,
+  "optimizer_updates": 0,
+  "no_Test": true,
+  "choice": "Micro8onlyiffinitegradients,cos>.999,relativeL2<.02,peakincludingtwoAdam-momentbuffers<7GB,andfasterthanmicro4. Otherwisefixedmicro4. No optimizerupdates."
+}

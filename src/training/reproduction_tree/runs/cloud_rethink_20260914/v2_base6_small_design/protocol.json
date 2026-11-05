@@ -1,0 +1,123 @@
+{
+  "status": "FROZEN_FOR_EXECUTION",
+  "id": "V2_BASE6_SMALL50INT8_F3_FIXED_QUALIFICATION",
+  "registered_at_unix": 1789467825.3815148,
+  "deadline_unix": 1789471425.3815148,
+  "seed": 20260915,
+  "optimizer_updates": 0,
+  "calibrators_fitted": 0,
+  "source_authorization_sha256": "7b3fa7a606709e42bf78597d31f133fa88daddc2c7f970d69a7a184c5d197ef7",
+  "worker_sha256": "d127746fdaa57d7c2269c354d8bdac9e7dfc4377629f0e0dcb4ca5ccfd24a786",
+  "controller_sha256": "f49edd2e57e4af6ba7f5fd22524af0af5a4f72a4b3aa3e1acbb00e8a12d1f2af",
+  "container": "C:\\Users\\贾瑞涵\\Documents\\learning\\CUHK——X small_model\\runs\\cloud_rethink_20260914\\v2_base6_small_design\\BASE6_SMALL8_F3_UNEVALUATED.bin",
+  "storage_format": "VIDEOMAEV2_BASE6_SMALL8_ALL50_FP32ROWS_OTHERSFP16_V1",
+  "pose_inputs": "C:\\Users\\贾瑞涵\\Documents\\learning\\CUHK——X small_model\\runs\\error_resolution_20260913\\POSE_ADAPTER_INPUTS.json",
+  "data_root": "D:/Datasets/CUHK-X_Small_Model_Track/Small-Model-Track",
+  "train_users": [
+    1,
+    2,
+    3,
+    4,
+    6,
+    9,
+    16,
+    17,
+    18,
+    19,
+    20,
+    22,
+    23,
+    24
+  ],
+  "held_users": [
+    5,
+    7,
+    8,
+    21
+  ],
+  "epochs": 16,
+  "models": {
+    "Base": {
+      "model_code": "C:\\Users\\贾瑞涵\\Documents\\learning\\CUHK——X small_model\\runs\\cloud_rethink_20260914\\videomaev2_base\\model.py",
+      "constructor": "VideoMAEBase",
+      "old_five_predictions": "C:\\Users\\贾瑞涵\\Documents\\learning\\CUHK——X small_model\\runs\\cloud_rethink_20260914\\videomaev2_base_quant\\output\\local\\V2_BASE_F3\\predictions.npz",
+      "parent_fp16": "C:\\Users\\贾瑞涵\\Documents\\learning\\CUHK——X small_model\\runs\\cloud_rethink_20260914\\videomaev2_base\\cloud\\V2_BASE_F3\\model_fp16.pt",
+      "parent_fp16_sha256": "397a788a796a9b9c3ee471cc590288e5dc75b26d81eeabcbc76a60e18042f359",
+      "old_seven_predictions": "C:\\Users\\贾瑞涵\\Documents\\learning\\CUHK——X small_model\\runs\\cloud_rethink_20260914\\v2_temporal_halves\\output\\local\\V2_BASE_F3\\predictions.npz"
+    },
+    "Small": {
+      "model_code": "C:\\Users\\贾瑞涵\\Documents\\learning\\CUHK——X small_model\\runs\\cloud_rethink_20260914\\videomaev2_small\\model.py",
+      "constructor": "VideoMAESmall",
+      "old_five_predictions": "C:\\Users\\贾瑞涵\\Documents\\learning\\CUHK——X small_model\\runs\\cloud_rethink_20260914\\videomaev2_quant\\output\\local\\V2_OUTER_F3\\predictions.npz",
+      "parent_fp16": "C:\\Users\\贾瑞涵\\Documents\\learning\\CUHK——X small_model\\runs\\cloud_rethink_20260914\\videomaev2_small\\output\\local\\model_fp16.pt",
+      "parent_fp16_sha256": "158e7c228d0a0e747e05c432c5943f17176c0816ebae0605af68853cee92189b"
+    }
+  },
+  "model_bytes_with_calibrator_reserve": 99972078,
+  "bindings": {
+    "C:\\Users\\贾瑞涵\\Documents\\learning\\CUHK——X small_model\\runs\\cloud_rethink_20260914\\v2_base6_small_design\\pair_codec.py": "078462086f480318972938214c3b32c48b5d8f2a6c601c0b9dea8baabcc54005",
+    "C:\\Users\\贾瑞涵\\Documents\\learning\\CUHK——X small_model\\runs\\cloud_rethink_20260914\\v2_base6_small_design\\loader.py": "ed777e2a9aafa1642f0873ac458a2a19e61e7f57f246aa6f267ed9f544de85fc",
+    "C:\\Users\\贾瑞涵\\Documents\\learning\\CUHK——X small_model\\runs\\cloud_rethink_20260914\\v2_base6_small_design\\pilot_worker.py": "d127746fdaa57d7c2269c354d8bdac9e7dfc4377629f0e0dcb4ca5ccfd24a786",
+    "C:\\Users\\贾瑞涵\\Documents\\learning\\CUHK——X small_model\\runs\\cloud_rethink_20260914\\v2_base6_small_design\\controller.py": "f49edd2e57e4af6ba7f5fd22524af0af5a4f72a4b3aa3e1acbb00e8a12d1f2af",
+    "C:\\Users\\贾瑞涵\\Documents\\learning\\CUHK——X small_model\\runs\\cloud_rethink_20260914\\v2_base6_small_design\\temporal_inputs.py": "7c3a89555235916480ab05f8b02791c12f6a87b50f7df6a24da33c10bb750d51",
+    "C:\\Users\\贾瑞涵\\Documents\\learning\\CUHK——X small_model\\runs\\cloud_rethink_20260914\\v2_base6_small_design\\resilient_io.py": "07fc8b86d4bda8526a73001b74f63a364552ab5c1b41598631c83764e2fedb3d",
+    "C:\\Users\\贾瑞涵\\Documents\\learning\\CUHK——X small_model\\runs\\cloud_rethink_20260914\\v2_base6_small_design\\CONTAINER_RESULT.json": "a26832e5c820daadcf9a542b251add4fa57f52deddb529e08269899ba59c06fa",
+    "C:\\Users\\贾瑞涵\\Documents\\learning\\CUHK——X small_model\\runs\\cloud_rethink_20260914\\v2_base6_small_design\\COMPLEMENT.json": "d718b35214115313bc8df5b6ce4c8a97f4bf8a8685104d97711d4bd0e0bd6b33",
+    "C:\\Users\\贾瑞涵\\Documents\\learning\\CUHK——X small_model\\runs\\cloud_rethink_20260914\\v2_base6_small_design\\SIZE_RESULT.json": "109c3495faebc15fa54489216652a1f305ee7ffb8b32f81fcacf08d3533f3103",
+    "C:\\Users\\贾瑞涵\\Documents\\learning\\CUHK——X small_model\\runs\\cloud_rethink_20260914\\v2_base6_small_design\\BASE6_SMALL8_F3_UNEVALUATED.bin": "baad1175d295ee022b997d81bb2a312e38008b12aeca175ceac830fc50644036",
+    "C:\\Users\\贾瑞涵\\Documents\\learning\\CUHK——X small_model\\runs\\cloud_rethink_20260914\\v2_base6_small8_source_completion\\AUDIT_PROTOTYPE.json": "79f031f7cae1e53c56e110d6c6acb3131e60ab204336d1c5bc66b537a4c1c6af",
+    "C:\\Users\\贾瑞涵\\Documents\\learning\\CUHK——X small_model\\runs\\error_resolution_20260913\\pose_view_data.py": "b7fdcc001f09a18e5c77e8852bf4274506322076ed0cd527c141a7d5bfaa6a3f",
+    "C:\\Users\\贾瑞涵\\Documents\\learning\\CUHK——X small_model\\runs\\error_resolution_20260913\\bundle\\activity_view_data.py": "62af5c595308d110bda8d5f798e838d4da4a1b8b57bc46357ae0564ce7e6be0f",
+    "C:\\Users\\贾瑞涵\\Documents\\learning\\CUHK——X small_model\\runs\\error_resolution_20260913\\bundle\\dual_host_runtime\\io.py": "f52b1e84a4398331fb735e40f34c0adefddb5842883f6482189941c877bf9ac2",
+    "C:\\Users\\贾瑞涵\\Documents\\learning\\CUHK——X small_model\\runs\\error_resolution_20260913\\bundle\\dual_host_runtime\\health.py": "c20f0151f184d0b82c52b77c7c111780cba7ad46959b0b9f6644e3cb09db0c82",
+    "C:\\Users\\贾瑞涵\\Documents\\learning\\CUHK——X small_model\\runs\\error_resolution_20260913\\bundle\\motion_video_runtime\\data.py": "0711128f0553cca0f5ab11d739693975d36a6ce3eb6a01fca4af866f3a13eec2",
+    "C:\\Users\\贾瑞涵\\Documents\\learning\\CUHK——X small_model\\runs\\cloud_rethink_20260914\\videomaev2_base\\model.py": "7a0cd042c729022e0b200d7885ed00a9e11fb0a9264f0a4006bab342475d9c3c",
+    "C:\\Users\\贾瑞涵\\Documents\\learning\\CUHK——X small_model\\runs\\cloud_rethink_20260914\\videomaev2_base\\upstream_modeling_finetune.py": "ce9a11ff05c7a1b5085addf6c73b71ffb68933564164f7b250dedad91f6e29b8",
+    "C:\\Users\\贾瑞涵\\Documents\\learning\\CUHK——X small_model\\runs\\cloud_rethink_20260914\\videomaev2_base\\ADMISSION.json": "a32372948498f5e7f28d0e1560d407b136ec5a41718669330f0c40392091dd77",
+    "C:\\Users\\贾瑞涵\\Documents\\learning\\CUHK——X small_model\\runs\\cloud_rethink_20260914\\videomaev2_base\\vit_b_k710_dl_from_giant.pth": "8141a6955e0700d11bf15928fe6d61e5cfe482606fed8cfdddb1b922c0fd88ec",
+    "C:\\Users\\贾瑞涵\\Documents\\learning\\CUHK——X small_model\\runs\\cloud_rethink_20260914\\videomaev2_base\\cloud\\V2_BASE_F3\\model_fp16.pt": "397a788a796a9b9c3ee471cc590288e5dc75b26d81eeabcbc76a60e18042f359",
+    "C:\\Users\\贾瑞涵\\Documents\\learning\\CUHK——X small_model\\runs\\cloud_rethink_20260914\\videomaev2_base\\cloud\\V2_BASE_F3\\FROZEN.json": "f0f3f0ff4ac98cc66c1a1caccba9e7dd884dee8156f34cc8c676e23db7b20ffd",
+    "C:\\Users\\贾瑞涵\\Documents\\learning\\CUHK——X small_model\\runs\\cloud_rethink_20260914\\videomaev2_base\\cloud\\V2_BASE_F3\\SPLIT.json": "24ca28203da3fd676147beb2f36729eef9a27f4e28606346fdc897bcfa9e1553",
+    "C:\\Users\\贾瑞涵\\Documents\\learning\\CUHK——X small_model\\runs\\cloud_rethink_20260914\\videomaev2_base\\cloud\\V2_BASE_F3\\TRAIN_DONE.json": "fd41aeb6244a49211fb5f1d3046a3d5f1b224328c14ef3ca20eb173e25de2d77",
+    "C:\\Users\\贾瑞涵\\Documents\\learning\\CUHK——X small_model\\runs\\cloud_rethink_20260914\\videomaev2_base_quant\\output\\local\\V2_BASE_F3\\predictions.npz": "a0578d384f9dfe29b07a68610f46a633f26925ad14c4e5c821e3c97a19376341",
+    "C:\\Users\\贾瑞涵\\Documents\\learning\\CUHK——X small_model\\runs\\cloud_rethink_20260914\\videomaev2_base_quant\\output\\local\\V2_BASE_F3\\DONE.json": "7e7e8b3d2caa9bcfcfb6f61943387ced4552bfdadf8c2bf1c479bf9aa6fc1759",
+    "C:\\Users\\贾瑞涵\\Documents\\learning\\CUHK——X small_model\\runs\\cloud_rethink_20260914\\videomaev2_base_quant\\output\\local\\V2_BASE_F3\\model_int8.pt": "cacd7dbc29e5b8889302d8bb8397d9efc8a1ca985ea914e5359c2158e1f160e0",
+    "C:\\Users\\贾瑞涵\\Documents\\learning\\CUHK——X small_model\\runs\\cloud_rethink_20260914\\v2_temporal_halves\\output\\local\\V2_BASE_F3\\predictions.npz": "5150eda33302b87708fd35df25b55769ee6f44e25919ea249146e2350581c7ce",
+    "C:\\Users\\贾瑞涵\\Documents\\learning\\CUHK——X small_model\\runs\\cloud_rethink_20260914\\v2_temporal_halves\\output\\local\\V2_BASE_F3\\DONE.json": "57820360e46bf56533ff84ec4292c7d27ff4a3dee0a18e41a50837a093e8f678",
+    "C:\\Users\\贾瑞涵\\Documents\\learning\\CUHK——X small_model\\runs\\cloud_rethink_20260914\\videomaev2_small\\model.py": "248948d2c2537060c1aa60239f3df92fd1bbc63a894c1707ff5ec717492f13dd",
+    "C:\\Users\\贾瑞涵\\Documents\\learning\\CUHK——X small_model\\runs\\cloud_rethink_20260914\\videomaev2_small\\upstream_modeling_finetune.py": "ce9a11ff05c7a1b5085addf6c73b71ffb68933564164f7b250dedad91f6e29b8",
+    "C:\\Users\\贾瑞涵\\Documents\\learning\\CUHK——X small_model\\runs\\cloud_rethink_20260914\\videomaev2_small\\ADMISSION.json": "f21d6f7aa6b1afc6629466e0af936872f43b15b7c66100155b07551bab2780fd",
+    "C:\\Users\\贾瑞涵\\Documents\\learning\\CUHK——X small_model\\runs\\cloud_rethink_20260914\\videomaev2_small\\vit_s_k710_dl_from_giant.pth": "24fb71687fa3671b8387cadfbcbab0f72af695692e93cf1ecc82caa888626172",
+    "C:\\Users\\贾瑞涵\\Documents\\learning\\CUHK——X small_model\\runs\\cloud_rethink_20260914\\videomaev2_small\\output\\local\\model_fp16.pt": "158e7c228d0a0e747e05c432c5943f17176c0816ebae0605af68853cee92189b",
+    "C:\\Users\\贾瑞涵\\Documents\\learning\\CUHK——X small_model\\runs\\cloud_rethink_20260914\\videomaev2_small\\output\\local\\FROZEN.json": "0b2d992032ad7ac1badefb6e4586ef9c554ca6509add531e67b5d8b633d4ba9b",
+    "C:\\Users\\贾瑞涵\\Documents\\learning\\CUHK——X small_model\\runs\\cloud_rethink_20260914\\videomaev2_small\\output\\local\\SPLIT.json": "e06d45b94971901d864b7fd771a4bf5163a7ee4659a4fab1655f89d38b0bf76b",
+    "C:\\Users\\贾瑞涵\\Documents\\learning\\CUHK——X small_model\\runs\\cloud_rethink_20260914\\videomaev2_small\\output\\local\\TRAIN_DONE.json": "3687e3d4cd65f4f4dffce6eb8505161b4ebf454443894da89ce56a3b287a2f09",
+    "C:\\Users\\贾瑞涵\\Documents\\learning\\CUHK——X small_model\\runs\\cloud_rethink_20260914\\videomaev2_quant\\output\\local\\V2_OUTER_F3\\predictions.npz": "867b35c06011498992d4af087dd99485eb05742da8b87a283e87d7fc11d81117",
+    "C:\\Users\\贾瑞涵\\Documents\\learning\\CUHK——X small_model\\runs\\cloud_rethink_20260914\\videomaev2_quant\\output\\local\\V2_OUTER_F3\\DONE.json": "7c22eec9f776b219019b5abdbd923b82680cd50a510fbc8468df7828b89c3d7d",
+    "C:\\Users\\贾瑞涵\\Documents\\learning\\CUHK——X small_model\\runs\\cloud_rethink_20260914\\videomaev2_quant\\output\\local\\V2_OUTER_F3\\model_int8.pt": "067cd690b4333a6c99bf73ddf3f855d11d595b716373f557f854c03dee37cfc6",
+    "C:\\Users\\贾瑞涵\\Documents\\learning\\CUHK——X small_model\\runs\\error_resolution_20260913\\POSE_ADAPTER_INPUTS.json": "f302ba5c3e56667017a5c22a08c3c78b1f39df8ff07896ee6b8adff3bf98eb21"
+  },
+  "hypothesis": "Fixed Base all50 rowwise6bit may preserve INT8 accuracy sufficiently to retain an independently trained K710 Small. Small keeps the prior49 q and FP32 scale values bitwise; only patch Conv3d becomes INT8.",
+  "precision": {
+    "compute": "FP32",
+    "TF32": false,
+    "microbatch": 3,
+    "data_workers": 2,
+    "prefetch_factor": 1,
+    "Base": "five original whole views plus two temporal halves; .5 whole mean+.25 early+.25 late",
+    "Small": "original five whole views"
+  },
+  "limits": "Adaptive F3 precision qualification, no fitting, no new fusion, no Test, no CSV. Future six source models must be matched by actual parent metadata before source calibration. No weight upload.",
+  "hosts": {
+    "local": {
+      "output_directory": "C:\\Users\\贾瑞涵\\Documents\\learning\\CUHK——X small_model\\runs\\cloud_rethink_20260914\\v2_base6_small_design\\output\\local",
+      "wall_cap_seconds": 3600,
+      "authorization_file": "C:\\Users\\贾瑞涵\\Documents\\learning\\CUHK——X small_model\\runs\\cloud_rethink_20260914\\AUTHORIZATION_DUAL_RESOURCE_20260914.json",
+      "predecessor": {
+        "directory": "C:\\Users\\贾瑞涵\\Documents\\learning\\CUHK——X small_model\\runs\\cloud_rethink_20260914\\v2_int4_source\\output\\local",
+        "protocol_sha256": "e91a4ceb27b6f12be8a80d7717977e64456a77cdba310f294dfef070ee291ad9",
+        "controller_done_sha256": "b968e02505cc55f7e4ed82042cdf1cc530db2dbecc2b26149b786fe21fba6c04"
+      }
+    }
+  }
+}

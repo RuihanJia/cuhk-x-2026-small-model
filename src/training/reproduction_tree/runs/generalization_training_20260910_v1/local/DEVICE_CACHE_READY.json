@@ -1,0 +1,24 @@
+{
+  "status": "PASS",
+  "path": "bundle/data/device_acceleration_t256.npz",
+  "sha256": "1A40572FA67E9C21D09B761FE90A275126716D00C4EA1BFAC2443484ED57EDF8",
+  "bytes": 33459147,
+  "protocol_sha256": "A4E4B114B1691B77CA05112FD7FBCE0946058483DD4F68D9D90E4C09C78DC8DA",
+  "source_hashes_sha256": "74A6492B9ACE4004E2BA5CB331CA474EA18C57B3D3B2E9762B92BFC707425E30",
+  "arm_numeric_parity_clips": 2543,
+  "all2931arm_tensor_bytes_unchanged": true,
+  "valid_devices": {
+    "WTLA": 2543,
+    "WTRA": 2543,
+    "WTC": 2361,
+    "WTLL": 2308,
+    "WTRL": 2331
+  },
+  "issues": {
+    "missing_file": 26,
+    "device_lt8_timestamps": 170,
+    "extra_quality_rejected": 459
+  },
+  "elapsed_seconds": 2.825695037841797,
+  "at_unix": 1789045796.39372
+}

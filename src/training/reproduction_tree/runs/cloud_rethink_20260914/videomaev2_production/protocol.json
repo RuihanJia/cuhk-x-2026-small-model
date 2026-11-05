@@ -1,0 +1,154 @@
+{
+  "status": "FROZEN_FOR_EXECUTION",
+  "id": "V2_K710_FULL18_RAW16_PROVISIONAL_PRODUCTION",
+  "registered_at_unix": 1789446073.987936,
+  "deadline_unix": 1789447393.987936,
+  "wall_cap_seconds": 1200,
+  "source_authorization_sha256": "7b3fa7a606709e42bf78597d31f133fa88daddc2c7f970d69a7a184c5d197ef7",
+  "hypothesis": "Pretrainingchangeprivate882vsSmall840 justifies one fixed16 full18 fit while independent actualINT8/sourcecalibration review runs; provisional fit not proof. Production max20minutes; no sweep, no Test, no auto promotion.",
+  "epochs": 16,
+  "evaluation_points": [
+    16
+  ],
+  "seed": 20260915,
+  "trainable_parameters": 21895336,
+  "backbone_lr": 0.0001,
+  "head_lr": 0.0005,
+  "layer_decay": 0.75,
+  "warmup_epochs": 2,
+  "min_lr_ratio": 0.01,
+  "weight_decay": 0.05,
+  "label_smoothing": 0.1,
+  "effective_batch": 16,
+  "gradient_clip": 1.0,
+  "amp_dtype": "float16",
+  "amp_initial_scale": 128,
+  "TF32": false,
+  "dropout": 0.0,
+  "drop_path": 0.0,
+  "checkpoint_cap_bytes": 45000000,
+  "pretrained_sha256": "24fb71687fa3671b8387cadfbcbab0f72af695692e93cf1ecc82caa888626172",
+  "admission_sha256": "f21d6f7aa6b1afc6629466e0af936872f43b15b7c66100155b07551bab2780fd",
+  "qa_protocol_sha256": "bc64cb141e0aea74cc8492cd89f3e2742383af9c2a65390f9fdfae97395a9146",
+  "qa_result_sha256": "4d3a98fba0b26904ff38dff1edd69d016e0d817b93d6d2646bf72ceb8c5d6b1f",
+  "original_protocol_sha256": "4ed62e67b16bfb97e799443b5a6364354173465cf7599e6b833d0285f60441e0",
+  "pose_inputs_sha256": "f302ba5c3e56667017a5c22a08c3c78b1f39df8ff07896ee6b8adff3bf98eb21",
+  "protected_local_bindings": {
+    "C:\\Users\\\u8d3e\u745e\u6db5\\Documents\\learning\\CUHK\u2014\u2014X small_model\\CORE_EVIDENCE_LOCK.json": "5b162169e72624311bab549d4f1a479e9378d97d3a156db6eb135850a2b7248a",
+    "C:\\Users\\\u8d3e\u745e\u6db5\\Documents\\learning\\CUHK\u2014\u2014X small_model\\CORE_RULES_EVIDENCE.md": "72296735082407ee9692a5aa8f8dc9a2f3b8473289233fa21a6d5ba37b96fcbc",
+    "C:\\Users\\\u8d3e\u745e\u6db5\\Documents\\learning\\CUHK\u2014\u2014X small_model\\evidence\\rules\\ai_coding_assistance_host_clarification_20260903.png": "948163c3dd1050bc9a2b632c76b3e08f3b391bdbd8a943cae6553dbf8414f2c2",
+    "C:\\Users\\\u8d3e\u745e\u6db5\\Documents\\learning\\CUHK\u2014\u2014X small_model\\evidence\\rules\\ai_coding_assistance_host_clarification_20260903.json": "86b555b7ff0f15bfede99220f7369ba9b305b28deb97cbbfbac3f79a04b18d13"
+  },
+  "jobs": [
+    {
+      "id": "V2_FULL18_RAW16",
+      "host": "cloud",
+      "fold": null,
+      "train_users": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24
+      ],
+      "held_users": []
+    }
+  ],
+  "hosts": {
+    "cloud": {
+      "output_directory": "/home/featurize/cuhkx_motion_transfer_20260911_v1/cloud_rethink_20260914/videomaev2_production/output/cloud",
+      "wall_cap_seconds": 1200,
+      "workers": 12,
+      "micro_clips": 16,
+      "eval_micro": 4,
+      "data_root": "/home/featurize/cuhkx_dual_host_20260910_v1/dataset/Small-Model-Track",
+      "pose_inputs": "/home/featurize/cuhkx_motion_transfer_20260911_v1/error_resolution_20260913/POSE_ADAPTER_INPUTS.json",
+      "original_protocol": "/home/featurize/cuhkx_motion_transfer_20260911_v1/error_resolution_20260913/POSE_ADAPTER_PROTOCOL.json",
+      "authorization_file": "/home/featurize/cuhkx_motion_transfer_20260911_v1/cloud_rethink_20260914/AUTHORIZATION_DUAL_RESOURCE_20260914.json",
+      "input_bindings": {
+        "/home/featurize/cuhkx_motion_transfer_20260911_v1/error_resolution_20260913/POSE_ADAPTER_INPUTS.json": "f302ba5c3e56667017a5c22a08c3c78b1f39df8ff07896ee6b8adff3bf98eb21",
+        "/home/featurize/cuhkx_motion_transfer_20260911_v1/error_resolution_20260913/POSE_ADAPTER_PROTOCOL.json": "4ed62e67b16bfb97e799443b5a6364354173465cf7599e6b833d0285f60441e0",
+        "/home/featurize/cuhkx_motion_transfer_20260911_v1/cloud_rethink_20260914/AUTHORIZATION_DUAL_RESOURCE_20260914.json": "7b3fa7a606709e42bf78597d31f133fa88daddc2c7f970d69a7a184c5d197ef7",
+        "/home/featurize/cuhkx_motion_transfer_20260911_v1/error_resolution_20260913/pose_view_data.py": "b7fdcc001f09a18e5c77e8852bf4274506322076ed0cd527c141a7d5bfaa6a3f",
+        "/home/featurize/cuhkx_motion_transfer_20260911_v1/error_resolution_20260913/bundle/activity_view_data.py": "62af5c595308d110bda8d5f798e838d4da4a1b8b57bc46357ae0564ce7e6be0f",
+        "/home/featurize/cuhkx_motion_transfer_20260911_v1/error_resolution_20260913/bundle/motion_video_runtime/__init__.py": "0f780850ed074f04e7ace53ffc19d98b8ce6631baf62ad14d7a8cf7a05815c31",
+        "/home/featurize/cuhkx_motion_transfer_20260911_v1/error_resolution_20260913/bundle/motion_video_runtime/data.py": "0711128f0553cca0f5ab11d739693975d36a6ce3eb6a01fca4af866f3a13eec2",
+        "/home/featurize/cuhkx_motion_transfer_20260911_v1/error_resolution_20260913/bundle/research_runtime/common.py": "39db2ac69d62c2876a35da4b34f770ceffb1a85a2d3181523a1d818509829c46",
+        "/home/featurize/cuhkx_motion_transfer_20260911_v1/error_resolution_20260913/bundle/dual_host_runtime/__init__.py": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+        "/home/featurize/cuhkx_motion_transfer_20260911_v1/error_resolution_20260913/bundle/dual_host_runtime/io.py": "f52b1e84a4398331fb735e40f34c0adefddb5842883f6482189941c877bf9ac2",
+        "/home/featurize/cuhkx_motion_transfer_20260911_v1/error_resolution_20260913/bundle/dual_host_runtime/health.py": "c20f0151f184d0b82c52b77c7c111780cba7ad46959b0b9f6644e3cb09db0c82",
+        "/home/featurize/cuhkx_motion_transfer_20260911_v1/cloud_rethink_20260914/videomaev2_small/vit_s_k710_dl_from_giant.pth": "24fb71687fa3671b8387cadfbcbab0f72af695692e93cf1ecc82caa888626172",
+        "/home/featurize/cuhkx_motion_transfer_20260911_v1/cloud_rethink_20260914/videomaev2_small/upstream_modeling_finetune.py": "ce9a11ff05c7a1b5085addf6c73b71ffb68933564164f7b250dedad91f6e29b8",
+        "/home/featurize/cuhkx_motion_transfer_20260911_v1/cloud_rethink_20260914/videomaev2_small/upstream_LICENSE": "bc8f60ee50544b2dd70b4bc90e22de503aa23b317d284046a479811f2e06f396",
+        "/home/featurize/cuhkx_motion_transfer_20260911_v1/cloud_rethink_20260914/videomaev2_small/source_v2.py": "e2662d2819645659a8b87f2b8880bd8558aa30eeb0a68bd67cffc182dce339c0",
+        "/home/featurize/cuhkx_motion_transfer_20260911_v1/cloud_rethink_20260914/videomaev2_small/ADMISSION.json": "f21d6f7aa6b1afc6629466e0af936872f43b15b7c66100155b07551bab2780fd"
+      },
+      "predecessor": {
+        "directory": "/home/featurize/cuhkx_motion_transfer_20260911_v1/cloud_rethink_20260914/videomaev2_quant/output/cloud",
+        "protocol_sha256": "8561435ef0eb531144775d30078fce2087f98a0ecee1083b4f28db33a6ffa76b",
+        "success_only": true
+      }
+    }
+  },
+  "input_recipe": "Original raw16x224 head-arm ROI; source deterministic temporal jitter and horizontal flip, no new photometric change. Invert P8(.45,.225) then public checkpoint ImageNet channel mean/std. Existing source conflict weights.",
+  "readout": "Final16 endpoint FP16 then fixed49linearINT8, noheld/Testforward",
+  "efficiency": "Cloud12persistentworkers versusoriginal8, no scientificsamplingchange; local4. Queuecountsintotaldeadline. Effective16 and fixedFP32fiveview unchanged.",
+  "controls": {
+    "baseline": "Original P8/R6 six-modality source-matched fixed fusion old855/1094",
+    "no_new_control_training": true,
+    "not_matched_pretraining_or_training_budget": false,
+    "legacy_protocol_sha256": "181dc8a702fcdaa05435c7ddab880fbc3c0190eb876cf10d299224b18b43fb2d",
+    "fixed_fusion_protocol": "/home/featurize/cuhkx_motion_transfer_20260911_v1/cloud_rethink_20260914/trajectory_fixed_fusion_protocol.json",
+    "fixed_fusion_protocol_sha256": "46a7e182a76296910775bbc71c6008a62349681e265b4a3b2d14c41649c2ccc3",
+    "primary": "Original K400 Small, same architecture/fresh40head/seed/16epochs/input/sampling/optimizer; only pretrainedbody changes."
+  },
+  "evaluation": {
+    "no_held_evaluation": true,
+    "no_Test": true,
+    "production_fit_not_validation": true
+  },
+  "limits": {
+    "no_Test": true,
+    "no_Public_tuning": true,
+    "no_new_instance": true,
+    "final_total_bytes": 100000000
+  },
+  "code_sha256": {
+    "aux_public_regression_20260914/dynamic_interaction/photometric_candidate/photometric_data_numpy.py": "a8880506aadfebcc309fb20921194a8ed4302ad4530be6206c69805df3c229d3",
+    "videomaev2_small/model.py": "248948d2c2537060c1aa60239f3df92fd1bbc63a894c1707ff5ec717492f13dd",
+    "videomaev2_small/worker.py": "75b237ce18c881345975f6a8d0d9ab9c73899c2bb9729b42825f2d779559511d",
+    "videomaev2_small/launch_cloud.py": "d8c792d179889d51b2fff735f7a2e98772188380497f800df7cce20109641694",
+    "videomaev2_small/watch_cloud.py": "f997ea1f793fc63c826a703f90b08ef59d919dba1e2160e409d552c6542d5529",
+    "videomaev2_quant/codec.py": "162881d1d8d6f7c5581dc4263614875b6f3c1787b3228a8d6605e2d5df8cc117",
+    "videomaev2_production/worker.py": "3b300eabea9bfa12a51c027d2d46c08e394bfdda2322351912e491df0b47cfe5",
+    "videomaev2_production/controller.py": "f69b2f58618a7c29b090e4c2b9fcb99c39e9667cd6fe2273cb75162b2ecff1e8",
+    "videomaev2_production/launch.py": "4bbfdb18eaf28f4909cb485687e37d40bcf5f904b7fa9131f36d1c0287370cf2",
+    "videomaev2_production/watch.py": "4aacf535e34953f7df6a29ea4e4e3cf44781d6f644552df6bb08ac9e4fcd1784"
+  },
+  "worker_sha256": "3b300eabea9bfa12a51c027d2d46c08e394bfdda2322351912e491df0b47cfe5",
+  "controller_sha256": "f69b2f58618a7c29b090e4c2b9fcb99c39e9667cd6fe2273cb75162b2ecff1e8",
+  "scientific_recipe_frozen_before_updates": true,
+  "control_protocol_sha256": "6224e5c484ed99b2ade46a4e6d3f656b641d1510758e57b9e6d401d7e9ff2804",
+  "no_Test": true,
+  "no_Public_fit": true,
+  "no_full18": false,
+  "promotion_requires": [
+    "Complete6source2outer audits",
+    "Sourceonly7branchpairedreview",
+    "Finalmodelserializationtotal<=100000000",
+    "Independentreleaseparity"
+  ]
+}

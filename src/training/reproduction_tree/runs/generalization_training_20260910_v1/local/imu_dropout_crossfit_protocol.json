@@ -1,0 +1,265 @@
+{
+  "id": "GENERALIZATION-IMU-DROPOUT-INNER-CROSSFIT-20260911-V1",
+  "status": "FROZEN_BEFORE_SIX_INNER_FITS",
+  "frozen_at_local": "2026-09-11T00:11:11+08:00",
+  "hypothesis": "Fixed extra-device dropout improved C in both already-used seeds. User-excluded inner D predictions permit assessing its incremental fusion contribution using matched originalseed outer D models, without fitting on any outer labels.",
+  "code_sha256": {
+    "generalization_imu_dropout_seed1.py": "FFA2528005EF72E174D5735E1B5C243F8F782AD16BA7BBD49127EDD4ED3FE073",
+    "generalization_imu_followup_no_wall.py": "469F1AA9A0007E15A4336E1CA85E5008E2699D20145835E101673566BAF2F1AF",
+    "generalization_imu_followup_worker.py": "FC249EA356E4A4A4E1D569BD4BA3DF6AB853B8EAB645C9170E600FE37E6484C3",
+    "generalization_imu_worker.py": "9B554FD292269CAF6FCD5BAAFACACFF64DDCE4FBDC0BA8DC3C966813ABEEFB6E",
+    "generalization_thermal_worker.py": "F659D61C4B8C6A63C80662B02CE1ACAA64B0292BB405A30C077364100E119976",
+    "generalization_thermal_worker_io2.py": "35E6283C5AFA472359085CA6E8A2F6352CD99D138F0526C1DA8163CEACF0817B",
+    "generalization_thermal_worker_no_wall.py": "F0A20A0675BCB51E254847D82D3155309B537470DC1E47AE3239366D90DAD60A",
+    "generalization_thermal_worker_solo.py": "4A764CFA5880DE52BF1F7909314D9890C06F7E1F684ED5A7C0ADA45A997B7CC4",
+    "native_queue.py": "1E77CF7987BC8F1BDD2A2DBF06949775A3F1A18BC186E6EFBDC30FB7EFD8DF53",
+    "native_queue_no_wall.py": "AAE30E5B9369C9A392BEA9E537BFCBC92CA0325D56367EAEC42EC1C1D5E6CB0B",
+    "optional_time_budget.py": "83AD66898CEBAAC6E294B98EB0BC0F1C87EB91D1DF61D1808696D27E7629C6BE",
+    "threaded_data.py": "076E22C0F897DB3E96B545C932C2D55910672752BF4FD222A46BC8A2571FCC9A",
+    "dual_host_runtime/health.py": "C20F0151F184D0B82C52B77C7C111780CBA7AD46959B0B9F6644E3CB09DB0C82",
+    "dual_host_runtime/io.py": "F52B1E84A4398331FB735E40F34C0ADEFDDB5842883F6482189941C877BF9AC2",
+    "dual_host_runtime/__init__.py": "01BA4719C80B6FE911B091A7C05124B64EEECE964E09C058EF8F9805DACA546B",
+    "research_runtime/common.py": "39DB2AC69D62C2876A35DA4B34F770CEFFB1A85A2D3181523A1D818509829C46",
+    "research_runtime/data.py": "AA73CB9CA13EEC1C3EA8C7106F2FE02C04E64DE79D1DA570694B73C07CC66ED7",
+    "research_runtime/metrics.py": "42A951823C8D233CDB195A552509DD1E39F27C457FCCAA2AA64BCC6B6F8F3527",
+    "research_runtime/models.py": "E1E3C9BB3F00B22226C91B4A6B8B8BAFFAB2BF52576673528662EA3008FB8639",
+    "research_runtime/train.py": "88C41CE236B30121EF04A4657ADB324BFAF00ADCAA768D962080277AE417F027",
+    "research_runtime/__init__.py": "0963B67CC66B4C3F5163AFCFE18920895F321B631920A5AD5238548C91911C07"
+  },
+  "folds": {
+    "0": [
+      2,
+      16,
+      20
+    ],
+    "3": [
+      5,
+      7,
+      8,
+      21
+    ]
+  },
+  "jobs": {
+    "IMU_DX_F0_0": {
+      "arm": "D",
+      "fold": 0,
+      "train_users": [
+        3,
+        4,
+        6,
+        7,
+        9,
+        17,
+        19,
+        21,
+        23,
+        24
+      ],
+      "predict_users": [
+        1,
+        5,
+        8,
+        18,
+        22
+      ]
+    },
+    "IMU_DX_F0_1": {
+      "arm": "D",
+      "fold": 0,
+      "train_users": [
+        1,
+        4,
+        5,
+        7,
+        8,
+        17,
+        18,
+        21,
+        22,
+        24
+      ],
+      "predict_users": [
+        3,
+        6,
+        9,
+        19,
+        23
+      ]
+    },
+    "IMU_DX_F0_2": {
+      "arm": "D",
+      "fold": 0,
+      "train_users": [
+        1,
+        3,
+        5,
+        6,
+        8,
+        9,
+        18,
+        19,
+        22,
+        23
+      ],
+      "predict_users": [
+        4,
+        7,
+        17,
+        21,
+        24
+      ]
+    },
+    "IMU_DX_F3_0": {
+      "arm": "D",
+      "fold": 3,
+      "train_users": [
+        2,
+        3,
+        6,
+        9,
+        17,
+        18,
+        20,
+        22,
+        24
+      ],
+      "predict_users": [
+        1,
+        4,
+        16,
+        19,
+        23
+      ]
+    },
+    "IMU_DX_F3_1": {
+      "arm": "D",
+      "fold": 3,
+      "train_users": [
+        1,
+        3,
+        4,
+        9,
+        16,
+        18,
+        19,
+        22,
+        23
+      ],
+      "predict_users": [
+        2,
+        6,
+        17,
+        20,
+        24
+      ]
+    },
+    "IMU_DX_F3_2": {
+      "arm": "D",
+      "fold": 3,
+      "train_users": [
+        1,
+        2,
+        4,
+        6,
+        16,
+        17,
+        19,
+        20,
+        23,
+        24
+      ],
+      "predict_users": [
+        3,
+        9,
+        18,
+        22
+      ]
+    }
+  },
+  "data": {
+    "arm_sha256": "270CD36E6B822A5B384A0100C45B62C2E782CE344A6DCBB44DD3D0F9718E7439",
+    "manifest_sha256": "82E73CDD3DC8E72382826C0E1320B80C16BC94148B86765EB62E3734957852A3",
+    "cohort": "Same2543valid native arm clips for all three arms",
+    "slots": [
+      "WTLA",
+      "WTRA",
+      "WTC",
+      "WTLL",
+      "WTRL"
+    ],
+    "extra_devices": "Original arm tensors remain byte-identical; extras interpolated onto arm-overlap time grid; per-device missing mask. Source builder and concrete cache bound before C starts.",
+    "device_cache_sha256": "1A40572FA67E9C21D09B761FE90A275126716D00C4EA1BFAC2443484ED57EDF8"
+  },
+  "training": {
+    "seed": 2026091003,
+    "epochs": 60,
+    "batch": 64,
+    "optimizer": "AdamW",
+    "lr": 0.001,
+    "weight_decay": 0.0001,
+    "scheduler": "cosine60_eta1e-5",
+    "label_smoothing": 0.1,
+    "clip_norm": 1.0,
+    "precision": "FP32",
+    "orientation": "Exact original seed2026091003 orientation tag and construction, shared with existing original B/C controls"
+  },
+  "controls": {
+    "outer_weights": "Reuse originalseed D1_F0/F3 exact60epoch checkpoints; same architecture,augmentation,optimizer,seed and normalization recipe",
+    "fusion_control": "The already-frozen video/sensor/Thermal variants remain; add prospective IMU-D convex/gated fusion comparisons using inner-only calibration",
+    "no_outer_refitting": true
+  },
+  "budget": {
+    "max_new_fits": 6,
+    "epochs_per_fit": 60,
+    "expected_total_fit_seconds": 100,
+    "expected_start_save_and_audit_minutes": "3-6",
+    "deadline_unix": null,
+    "local_wall_cap_enabled": false
+  },
+  "metrics": "Fixed final60epoch serialized FP16 model reconstructed in FP32. No validation during fit. Report paired correctness flips,macroF1,eachuser,uncertainty; no hard improvement-count gate.",
+  "limitations": [
+    "New60epoch seed-matched batch is not an exact reproduction of older100epoch IMU result",
+    "Per-device availability is observed input quality, not identity features; coverage and missingness reported"
+  ],
+  "Test_access": false,
+  "F2_F4_outer": false,
+  "all18": false,
+  "external_data": false,
+  "parent_protocol_sha256": "43BE86A927258DE88499A7F74B357BE8F358B666524943FE14BB4E6CB4507F3F",
+  "prior_evidence": {
+    "IMU_FOLLOWUP_AUDIT.json": {
+      "sha256": "E34AD35361E75360B4027A11BB0BFC992BDD3FBCB74FDD8C589A61A06D734E22",
+      "D_vs_C": 24
+    },
+    "IMU_DROPOUT_REPLICATION_AUDIT.json": {
+      "sha256": "73667D7560ECCD6D58934586339E0EBF47B1BF262C05CC306EEA32997B04F407",
+      "D_vs_C": 28
+    }
+  },
+  "device_dropout": {
+    "probability": 0.25,
+    "scope": "WTC,WTLL,WTRL only at training",
+    "seed_rule": "independent PCG64(seed+fold*1000003+epoch)",
+    "applied_to": "validity mask before zeroing inputs and encoder outputs",
+    "original_data_and_normalizer_unchanged": true
+  },
+  "execution_amended_at_local": "2026-09-10T23:35:05+08:00",
+  "execution_parent_protocol_sha256": "C99584052F6A6FE5912D79525C8105A6A2DED2CBE4640D061E60D14CEEFF2D91",
+  "execution_delta": {
+    "change": "Six inner user-excluded fits with exact originalseedD recipe; no new architecture,seed,probability or outer fit",
+    "scientific_changes": "Different preregistered inner training user subsets",
+    "cloud_gpu_budget_changed": false
+  },
+  "outer_checkpoint_sources": {
+    "0": {
+      "job": "IMU_D1_F0",
+      "checkpoint_sha256": "567E51AA7017ED02E9A33C7A5A0DC808A3AAE2C20C785834D958D68A66735D02",
+      "protocol_sha256": "6015CFC1D97012B03B6E2908FA240C5EE418347C3DEC92992206540550F25620"
+    },
+    "3": {
+      "job": "IMU_D1_F3",
+      "checkpoint_sha256": "13EB3B6268C5F5364CCB08B7E5FECB76BF3BC2D6C1499BB6670BC39AC6400F18",
+      "protocol_sha256": "6015CFC1D97012B03B6E2908FA240C5EE418347C3DEC92992206540550F25620"
+    }
+  }
+}

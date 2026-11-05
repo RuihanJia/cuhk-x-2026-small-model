@@ -1,0 +1,42 @@
+Metadata-Version: 2.4
+Name: pytorchvideo
+Version: 0.1.5
+Summary: A video understanding deep learning library.
+Home-page: https://github.com/facebookresearch/pytorchvideo
+Author: Facebook AI
+License: Apache 2.0
+Requires-Python: >=3.7
+License-File: LICENSE
+Requires-Dist: fvcore
+Requires-Dist: av
+Requires-Dist: parameterized
+Requires-Dist: iopath
+Requires-Dist: networkx
+Provides-Extra: test
+Requires-Dist: coverage; extra == "test"
+Requires-Dist: pytest; extra == "test"
+Requires-Dist: opencv-python; extra == "test"
+Requires-Dist: decord; extra == "test"
+Provides-Extra: dev
+Requires-Dist: opencv-python; extra == "dev"
+Requires-Dist: decord; extra == "dev"
+Requires-Dist: black==20.8b1; extra == "dev"
+Requires-Dist: sphinx; extra == "dev"
+Requires-Dist: isort==4.3.21; extra == "dev"
+Requires-Dist: flake8==3.8.1; extra == "dev"
+Requires-Dist: flake8-bugbear; extra == "dev"
+Requires-Dist: flake8-comprehensions; extra == "dev"
+Requires-Dist: pre-commit; extra == "dev"
+Requires-Dist: nbconvert; extra == "dev"
+Requires-Dist: bs4; extra == "dev"
+Requires-Dist: autoflake==1.4; extra == "dev"
+Provides-Extra: opencv-python
+Requires-Dist: opencv-python; extra == "opencv-python"
+Dynamic: author
+Dynamic: home-page
+Dynamic: license
+Dynamic: license-file
+Dynamic: provides-extra
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary

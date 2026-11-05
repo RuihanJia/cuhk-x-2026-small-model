@@ -1,0 +1,201 @@
+{
+  "status": "FROZEN_FOR_EXECUTION",
+  "id": "V2_BASE_RAW16_CONTROL4_FIXED_HALF_WEIGHT_AVERAGE_TWO_SOURCE",
+  "registered_at_unix": 1789473585.046506,
+  "deadline_unix": 1789478985.046506,
+  "wall_cap_seconds": 5400,
+  "source_authorization_sha256": "7b3fa7a606709e42bf78597d31f133fa88daddc2c7f970d69a7a184c5d197ef7",
+  "explicit_authorization": "Root explicitly approved fixed half average, original50 INT8, two source groups, cloud first and local after RTN405; 90 minute complete queue margin; zero updates, no Test or parameter scan.",
+  "hypothesis": "One fixed average can damp the endpoint perturbation of matched low-LR warm continuation while retaining one encoder. Prior Control4 classwise927 versus H928 is mixed evidence, not proof averaging improves.",
+  "alpha": 0.5,
+  "arithmetic": "FP32 midpoint of two saved FP16 states, FP16 storage round, original50-matrix INT8 pack, actual dequantized FP32 forward",
+  "optimizer_updates": 0,
+  "seed": 20260915,
+  "storage_format": "VIDEOMAE_BASE_ALL_50_WEIGHTS_OUTPUT_INT8_FP32_SCALE_OTHERS_FP16_V1",
+  "checkpoint_cap_bytes": 87000000,
+  "pose_inputs_sha256": "f302ba5c3e56667017a5c22a08c3c78b1f39df8ff07896ee6b8adff3bf98eb21",
+  "jobs": [
+    {
+      "id": "V2_BASE_SOURCE_F3_INNER2_FIXED_HALF_AVERAGE",
+      "scope": "source",
+      "host": "local",
+      "fold": 3,
+      "inner": 2,
+      "records": 711,
+      "train_users": [
+        1,
+        2,
+        4,
+        6,
+        16,
+        17,
+        19,
+        20,
+        23,
+        24
+      ],
+      "held_users": [
+        3,
+        9,
+        18,
+        22
+      ],
+      "outer_excluded_users": [
+        5,
+        7,
+        8,
+        21
+      ],
+      "raw": {
+        "directory": "C:\\Users\\贾瑞涵\\Documents\\learning\\CUHK——X small_model\\runs\\cloud_rethink_20260914\\videomaev2_base\\output\\local\\V2_BASE_SOURCE_F3_INNER2",
+        "protocol_sha256": "d110bc128752d3b136d8751d828da6d1ce3d2e322381ae328aeb9c560dcb98ce",
+        "checkpoint_sha256": "335807918a1bc7762bc4ce281c0573291e938ee91dbc2ef0c328ed7f964d10c4",
+        "frozen_sha256": "d2b7ca59df368a1092818ce8507aa9212c7b48d60379a5736687e26ceb294dbf",
+        "split_sha256": "d8dc7b19c6194e0d66dad47359e2d8dc75dd30e5510bdd865afeeaf8b731f372",
+        "train_done_sha256": "c11552933a117a55384dad7223674451761f29a6477e9d3c54b8c8fd1b0ebe6e"
+      },
+      "control": {
+        "directory": "C:\\Users\\贾瑞涵\\Documents\\learning\\CUHK——X small_model\\runs\\cloud_rethink_20260914\\v2_window_resume\\output\\local_v2\\V2_BASE_SOURCE_F3_INNER2_CONTROL",
+        "protocol_sha256": "e73be5ffd7ef5adf0ce0a724967c2ee16478ab6da820d6f07f2794323512efaa",
+        "checkpoint_sha256": "d6f4e67acdfee13a93a2a52e247d3b837bbece19f4f89cdffe488622e38ae785",
+        "frozen_sha256": "2eda519cbb0d8be4b94b6dd0f528fa6ad5e2d6851391d9b4a12226b92757f116",
+        "split_sha256": "b2a1ab7ac01172e2db2184cc796aec47a6f006f696df3f40c226af8850acf7b6",
+        "train_done_sha256": "4dd1d644a6c22aabfa9807eb4681f705134feafdb19711190f66bd4bfe978fc2",
+        "parent_binding_sha256": "235cf56663e8e54c45aa5340473c14c15e9d45ec80773b2946f507124b3bd844"
+      }
+    },
+    {
+      "id": "V2_BASE_SOURCE_F0_INNER0_FIXED_HALF_AVERAGE",
+      "scope": "source",
+      "host": "cloud",
+      "fold": 0,
+      "inner": 0,
+      "records": 783,
+      "train_users": [
+        3,
+        4,
+        6,
+        7,
+        9,
+        17,
+        19,
+        21,
+        23,
+        24
+      ],
+      "held_users": [
+        1,
+        5,
+        8,
+        18,
+        22
+      ],
+      "outer_excluded_users": [
+        2,
+        16,
+        20
+      ],
+      "raw": {
+        "directory": "/home/featurize/cuhkx_motion_transfer_20260911_v1/cloud_rethink_20260914/videomaev2_base_source/output/cloud/V2_BASE_SOURCE_F0_INNER0",
+        "protocol_sha256": "1df24ba7d62fff83021594298c9822782f8edd7c44e17b0e34dc764464126807",
+        "checkpoint_sha256": "68077eeb38ac46b2e74ab92152879f6da1f75c8facd97b00f44bc30431970339",
+        "frozen_sha256": "1d2dc068b54cd2ce63008709a88c8997cf48bdb9970ddbe79580547c8c58a71d",
+        "split_sha256": "b8880f090eba96e9216fb5d98dff6af7b3fd6d0b664e63fa7a368286af1356db",
+        "train_done_sha256": "d9e79c13f57913e34c9da8f6ad0616eb06f68807ee30c6af3e6535f86b576649"
+      },
+      "control": {
+        "directory": "/home/featurize/cuhkx_motion_transfer_20260911_v1/cloud_rethink_20260914/v2_window_cloud52910/output/cloud/V2_BASE_SOURCE_F0_INNER0_CONTROL",
+        "protocol_sha256": "eb178555369cdfb0227c98e7cff62970769daab9eeab0d22b94854202a609481",
+        "checkpoint_sha256": "2e374c10cae72407762a0361ad70a0bc29b586610d438f3716c86608cc8b80bd",
+        "frozen_sha256": "cb96e8d43df2a9f473399351f88e50913ba19cfdca01af08042dd23320085578",
+        "split_sha256": "76e1f84c5a61722ccf7959ae8e3fa03a482b69b9565c06e0a78fdb35b8b2e21a",
+        "train_done_sha256": "dd99b3a366349a0c01abc8ea6af3c0956033416530cd73a25e452138dd3ea0a0",
+        "parent_binding_sha256": "870f69234a950ba9617c5ae9965a8f44e214b1043e9ba7043bcd48553e782549"
+      }
+    }
+  ],
+  "hosts": {
+    "local": {
+      "output_directory": "C:\\Users\\贾瑞涵\\Documents\\learning\\CUHK——X small_model\\runs\\cloud_rethink_20260914\\v2_base_weight_average_pilot\\output\\local",
+      "wall_cap_seconds": 5400,
+      "workers": 2,
+      "eval_micro": 4,
+      "data_root": "D:/Datasets/CUHK-X_Small_Model_Track/Small-Model-Track",
+      "pose_inputs": "C:\\Users\\贾瑞涵\\Documents\\learning\\CUHK——X small_model\\runs\\error_resolution_20260913\\POSE_ADAPTER_INPUTS.json",
+      "authorization_file": "C:\\Users\\贾瑞涵\\Documents\\learning\\CUHK——X small_model\\runs\\cloud_rethink_20260914\\AUTHORIZATION_DUAL_RESOURCE_20260914.json",
+      "input_bindings": {
+        "C:\\Users\\贾瑞涵\\Documents\\learning\\CUHK——X small_model\\runs\\error_resolution_20260913\\POSE_ADAPTER_INPUTS.json": "f302ba5c3e56667017a5c22a08c3c78b1f39df8ff07896ee6b8adff3bf98eb21",
+        "C:\\Users\\贾瑞涵\\Documents\\learning\\CUHK——X small_model\\runs\\cloud_rethink_20260914\\AUTHORIZATION_DUAL_RESOURCE_20260914.json": "7b3fa7a606709e42bf78597d31f133fa88daddc2c7f970d69a7a184c5d197ef7"
+      },
+      "predecessor": {
+        "directory": "C:\\Users\\贾瑞涵\\Documents\\learning\\CUHK——X small_model\\runs\\cloud_rethink_20260914\\v2_base6_small8_production\\output\\local",
+        "protocol_sha256": "2bfee5bf07c835ee3618418d6aa63bbd2a7389088664f4b0e282c015401d3285",
+        "success_only": true
+      }
+    },
+    "cloud": {
+      "output_directory": "/home/featurize/cuhkx_motion_transfer_20260911_v1/cloud_rethink_20260914/v2_base_weight_average_pilot/output/cloud",
+      "wall_cap_seconds": 5400,
+      "workers": 12,
+      "eval_micro": 4,
+      "data_root": "/home/featurize/cuhkx_dual_host_20260910_v1/dataset/Small-Model-Track",
+      "pose_inputs": "/home/featurize/cuhkx_motion_transfer_20260911_v1/error_resolution_20260913/POSE_ADAPTER_INPUTS.json",
+      "authorization_file": "/home/featurize/cuhkx_motion_transfer_20260911_v1/cloud_rethink_20260914/AUTHORIZATION_DUAL_RESOURCE_20260914.json",
+      "input_bindings": {
+        "/home/featurize/cuhkx_motion_transfer_20260911_v1/error_resolution_20260913/POSE_ADAPTER_INPUTS.json": "f302ba5c3e56667017a5c22a08c3c78b1f39df8ff07896ee6b8adff3bf98eb21",
+        "/home/featurize/cuhkx_motion_transfer_20260911_v1/cloud_rethink_20260914/AUTHORIZATION_DUAL_RESOURCE_20260914.json": "7b3fa7a606709e42bf78597d31f133fa88daddc2c7f970d69a7a184c5d197ef7"
+      },
+      "predecessor": {
+        "directory": "/home/featurize/cuhkx_motion_transfer_20260911_v1/cloud_rethink_20260914/v2_gptq6_source_completion/output/cloud",
+        "protocol_sha256": "0e03c08893e3b4704d408dfb3bbd538c1b88c023a08c7b252c748997d56b32ec",
+        "success_only": true
+      }
+    }
+  },
+  "code_sha256": {
+    "v2_base_weight_average_pilot/worker.py": "0819a69274254a560203bbb9a35aa7dcee8b6fdbc7ad6393fa043691619058ea",
+    "v2_base_weight_average_pilot/data.py": "0879708dca3b7fdc153031c3c1fe405e406f92de615fd69f5758b44acfde4588",
+    "v2_base_weight_average_pilot/controller.py": "849cffdda32eab27e652999433eb791a24803819f699ee2743bd85063fd9b4c8",
+    "v2_base_weight_average_pilot/resilient_io.py": "07fc8b86d4bda8526a73001b74f63a364552ab5c1b41598631c83764e2fedb3d",
+    "v2_base_weight_average_pilot/launch.py": "feb433db6ea905f91bc3350b67e17ab9dc26b2b1fe22108355f2784874095b84",
+    "v2_base_weight_average_pilot/prepare.py": "574634a8e5c5745164641ab60ce7d5b40f080540c856c17f4d3f2310aae4f249",
+    "videomaev2_base/model.py": "7a0cd042c729022e0b200d7885ed00a9e11fb0a9264f0a4006bab342475d9c3c",
+    "videomaev2_base/upstream_modeling_finetune.py": "ce9a11ff05c7a1b5085addf6c73b71ffb68933564164f7b250dedad91f6e29b8",
+    "videomaev2_base_quant/codec.py": "a230bb310a22e4ba741cfe6534cda9d267e2ae87e7d437b13e0dd55e92ec3ab6",
+    "v2_window_resume/temporal_data.py": "7c3a89555235916480ab05f8b02791c12f6a87b50f7df6a24da33c10bb750d51",
+    "aux_public_regression_20260914/dynamic_interaction/photometric_candidate/photometric_data_numpy.py": "a8880506aadfebcc309fb20921194a8ed4302ad4530be6206c69805df3c229d3",
+    "../error_resolution_20260913/pose_view_data.py": "b7fdcc001f09a18e5c77e8852bf4274506322076ed0cd527c141a7d5bfaa6a3f",
+    "../error_resolution_20260913/bundle/activity_view_data.py": "62af5c595308d110bda8d5f798e838d4da4a1b8b57bc46357ae0564ce7e6be0f",
+    "../error_resolution_20260913/bundle/motion_video_runtime/data.py": "0711128f0553cca0f5ab11d739693975d36a6ce3eb6a01fca4af866f3a13eec2",
+    "../error_resolution_20260913/bundle/dual_host_runtime/io.py": "f52b1e84a4398331fb735e40f34c0adefddb5842883f6482189941c877bf9ac2",
+    "../error_resolution_20260913/bundle/dual_host_runtime/health.py": "c20f0151f184d0b82c52b77c7c111780cba7ad46959b0b9f6644e3cb09db0c82"
+  },
+  "worker_sha256": "0819a69274254a560203bbb9a35aa7dcee8b6fdbc7ad6393fa043691619058ea",
+  "controller_sha256": "849cffdda32eab27e652999433eb791a24803819f699ee2743bd85063fd9b4c8",
+  "evaluation": {
+    "views": "unchanged original five plus early/late midpoint halves",
+    "formula": ".5*mean(first5)+.25*early+.25*late",
+    "source_groups": 2,
+    "outer_arrays_opened": false,
+    "calibration_fits": 0,
+    "comparators": "exact existing raw16 INT8 seven-view and matched CONTROL4 INT8 seven-view source predictions",
+    "report": "standalone source NLL/correct/fix/harm/per-user; no final fusion or model selection from outer"
+  },
+  "limits": [
+    "Adaptive development source groups, not fresh confirmation.",
+    "CONTROL4 reset AdamW and LR warmup, not exact16to20 resume.",
+    "Only this two-source pilot authorized here; remaining6 readouts and production require separately fixed stage.",
+    "No SWA claim: one uniform two-endpoint average, no cycle/snapshot scan."
+  ],
+  "model_size_projection": {
+    "base_int8_prior_bytes": 86770711,
+    "unchanged_TI_pose_bytes": 12656523,
+    "total_before_calibrator_bytes": 99427234,
+    "no_double_encoder_at_inference": true
+  },
+  "references": [
+    "https://arxiv.org/abs/2203.05482",
+    "https://arxiv.org/abs/1803.05407"
+  ],
+  "cpu_qa_sha256": "418ad710b15750e355fc1e52a51a3545386d6297724feb28a7760c8e889618ca"
+}

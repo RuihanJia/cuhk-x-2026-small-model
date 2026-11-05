@@ -1,0 +1,485 @@
+{
+  "id": "GENERALIZATION-MATCHED-SENSOR-LOCAL-DEPENDENCY-REPAIR-20260911-V1",
+  "status": "FROZEN_BEFORE_TRAINING",
+  "frozen_at_local": "2026-09-10T21:20:34+08:00",
+  "authorization": "User explicitly requested both hosts start training at2026-09-10 20:51:56 +08",
+  "hypothesis": "User-excluded inner predictions permit training reliable fusion without inner encoder label leakage; fresh matching outer models isolate recipe mismatch from calibration benefit.",
+  "training_users": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24
+  ],
+  "folds": {
+    "0": [
+      2,
+      16,
+      20
+    ],
+    "3": [
+      5,
+      7,
+      8,
+      21
+    ]
+  },
+  "inner_user_groups": {
+    "0": [
+      [
+        1,
+        5,
+        8,
+        18,
+        22
+      ],
+      [
+        3,
+        6,
+        9,
+        19,
+        23
+      ],
+      [
+        4,
+        7,
+        17,
+        21,
+        24
+      ]
+    ],
+    "3": [
+      [
+        1,
+        4,
+        16,
+        19,
+        23
+      ],
+      [
+        2,
+        6,
+        17,
+        20,
+        24
+      ],
+      [
+        3,
+        9,
+        18,
+        22
+      ]
+    ]
+  },
+  "code_sha256": {
+    "generalization_imu_dropout_seed1.py": "FFA2528005EF72E174D5735E1B5C243F8F782AD16BA7BBD49127EDD4ED3FE073",
+    "generalization_imu_followup_no_wall.py": "469F1AA9A0007E15A4336E1CA85E5008E2699D20145835E101673566BAF2F1AF",
+    "generalization_imu_followup_worker.py": "FC249EA356E4A4A4E1D569BD4BA3DF6AB853B8EAB645C9170E600FE37E6484C3",
+    "generalization_imu_worker.py": "9B554FD292269CAF6FCD5BAAFACACFF64DDCE4FBDC0BA8DC3C966813ABEEFB6E",
+    "generalization_sensor_local.py": "A8EF7EE46E91B599231172047F7BFF779F830337D7B79F3520F65D0962F22B52",
+    "generalization_sensor_publish.py": "A6C2D48A8091C75744AAC8675B88F1E2EA449134B997CD341701FD40FF54AD8A",
+    "generalization_thermal_worker.py": "F659D61C4B8C6A63C80662B02CE1ACAA64B0292BB405A30C077364100E119976",
+    "generalization_thermal_worker_io2.py": "35E6283C5AFA472359085CA6E8A2F6352CD99D138F0526C1DA8163CEACF0817B",
+    "generalization_thermal_worker_no_wall.py": "F0A20A0675BCB51E254847D82D3155309B537470DC1E47AE3239366D90DAD60A",
+    "generalization_thermal_worker_solo.py": "4A764CFA5880DE52BF1F7909314D9890C06F7E1F684ED5A7C0ADA45A997B7CC4",
+    "native_queue.py": "1E77CF7987BC8F1BDD2A2DBF06949775A3F1A18BC186E6EFBDC30FB7EFD8DF53",
+    "native_queue_no_wall.py": "AAE30E5B9369C9A392BEA9E537BFCBC92CA0325D56367EAEC42EC1C1D5E6CB0B",
+    "optional_time_budget.py": "83AD66898CEBAAC6E294B98EB0BC0F1C87EB91D1DF61D1808696D27E7629C6BE",
+    "threaded_data.py": "076E22C0F897DB3E96B545C932C2D55910672752BF4FD222A46BC8A2571FCC9A",
+    "dual_host_runtime/health.py": "C20F0151F184D0B82C52B77C7C111780CBA7AD46959B0B9F6644E3CB09DB0C82",
+    "dual_host_runtime/io.py": "F52B1E84A4398331FB735E40F34C0ADEFDDB5842883F6482189941C877BF9AC2",
+    "dual_host_runtime/__init__.py": "01BA4719C80B6FE911B091A7C05124B64EEECE964E09C058EF8F9805DACA546B",
+    "research_runtime/common.py": "39DB2AC69D62C2876A35DA4B34F770CEFFB1A85A2D3181523A1D818509829C46",
+    "research_runtime/data.py": "AA73CB9CA13EEC1C3EA8C7106F2FE02C04E64DE79D1DA570694B73C07CC66ED7",
+    "research_runtime/metrics.py": "42A951823C8D233CDB195A552509DD1E39F27C457FCCAA2AA64BCC6B6F8F3527",
+    "research_runtime/models.py": "E1E3C9BB3F00B22226C91B4A6B8B8BAFFAB2BF52576673528662EA3008FB8639",
+    "research_runtime/train.py": "88C41CE236B30121EF04A4657ADB324BFAF00ADCAA768D962080277AE417F027",
+    "research_runtime/__init__.py": "0963B67CC66B4C3F5163AFCFE18920895F321B631920A5AD5238548C91911C07",
+    "research_runtime/vendor/sensor.py": "3EBEB9483A92895D42141405C5B2A5E7EAB962EAFC50EEB8BD97921B7020EC91",
+    "research_runtime/vendor/__init__.py": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+  },
+  "assets": {
+    "mvit_public": {
+      "path": "assets/mvit_k400.pth",
+      "sha256": "AE3BE16733081F6D1CD40E4AB980CA23D6DF6DC6486D15ADA05A5E8AB8C9B975",
+      "train_users": [],
+      "admission": "evidence/pretrained/mvit_v2_s_kinetics400_20260908_admission.json"
+    }
+  },
+  "data_sha256": {
+    "frame_index.json": "11308BD7DFE002EB0F4C2F9DC595236EC67DF7CDCE4FE167581B4D4F9CB71BD4",
+    "measured_sensors.npz": "30FA6AC58C96B0187BBC031D05BF628E108495DACEAF1433DD7EB50FFDD0B6BB"
+  },
+  "input": {
+    "frames": 16,
+    "resize": 256,
+    "crop": 224,
+    "normalization_mean": [
+      0.45,
+      0.45,
+      0.45
+    ],
+    "normalization_std": [
+      0.225,
+      0.225,
+      0.225
+    ],
+    "train_sampling": "shared segment jitter and0.5horizontalflip; center crop",
+    "prediction": "fixed five-view cross: center,low/high long-axis crops atphase.5;center crops atphases.25/.75; FP32 logits averaged equally; per-modality exported"
+  },
+  "jobs": {
+    "S_F0_0": {
+      "kind": "sensor",
+      "train_users": [
+        3,
+        4,
+        6,
+        7,
+        9,
+        17,
+        19,
+        21,
+        23,
+        24
+      ],
+      "predict_users": [
+        1,
+        5,
+        8,
+        18,
+        22
+      ],
+      "source": "mvit_public",
+      "epochs": 60,
+      "seed": 20260909,
+      "arm": "individual",
+      "fold": 0,
+      "calibration": false,
+      "micro_batch": 4,
+      "accumulation": 2,
+      "effective_batch": 8,
+      "loader_workers": 4,
+      "non_blocking": true,
+      "backbone_lr": 0.0001,
+      "head_lr": 0.001
+    },
+    "S_F3_0": {
+      "kind": "sensor",
+      "train_users": [
+        2,
+        3,
+        6,
+        9,
+        17,
+        18,
+        20,
+        22,
+        24
+      ],
+      "predict_users": [
+        1,
+        4,
+        16,
+        19,
+        23
+      ],
+      "source": "mvit_public",
+      "epochs": 60,
+      "seed": 20260909,
+      "arm": "individual",
+      "fold": 3,
+      "calibration": false,
+      "micro_batch": 4,
+      "accumulation": 2,
+      "effective_batch": 8,
+      "loader_workers": 4,
+      "non_blocking": true,
+      "backbone_lr": 0.0001,
+      "head_lr": 0.001
+    },
+    "S_F0_1": {
+      "kind": "sensor",
+      "train_users": [
+        1,
+        4,
+        5,
+        7,
+        8,
+        17,
+        18,
+        21,
+        22,
+        24
+      ],
+      "predict_users": [
+        3,
+        6,
+        9,
+        19,
+        23
+      ],
+      "source": "mvit_public",
+      "epochs": 60,
+      "seed": 20260909,
+      "arm": "individual",
+      "fold": 0,
+      "calibration": false,
+      "micro_batch": 4,
+      "accumulation": 2,
+      "effective_batch": 8,
+      "loader_workers": 4,
+      "non_blocking": true,
+      "backbone_lr": 0.0001,
+      "head_lr": 0.001
+    },
+    "S_F3_1": {
+      "kind": "sensor",
+      "train_users": [
+        1,
+        3,
+        4,
+        9,
+        16,
+        18,
+        19,
+        22,
+        23
+      ],
+      "predict_users": [
+        2,
+        6,
+        17,
+        20,
+        24
+      ],
+      "source": "mvit_public",
+      "epochs": 60,
+      "seed": 20260909,
+      "arm": "individual",
+      "fold": 3,
+      "calibration": false,
+      "micro_batch": 4,
+      "accumulation": 2,
+      "effective_batch": 8,
+      "loader_workers": 4,
+      "non_blocking": true,
+      "backbone_lr": 0.0001,
+      "head_lr": 0.001
+    },
+    "S_F0_2": {
+      "kind": "sensor",
+      "train_users": [
+        1,
+        3,
+        5,
+        6,
+        8,
+        9,
+        18,
+        19,
+        22,
+        23
+      ],
+      "predict_users": [
+        4,
+        7,
+        17,
+        21,
+        24
+      ],
+      "source": "mvit_public",
+      "epochs": 60,
+      "seed": 20260909,
+      "arm": "individual",
+      "fold": 0,
+      "calibration": false,
+      "micro_batch": 4,
+      "accumulation": 2,
+      "effective_batch": 8,
+      "loader_workers": 4,
+      "non_blocking": true,
+      "backbone_lr": 0.0001,
+      "head_lr": 0.001
+    },
+    "S_F3_2": {
+      "kind": "sensor",
+      "train_users": [
+        1,
+        2,
+        4,
+        6,
+        16,
+        17,
+        19,
+        20,
+        23,
+        24
+      ],
+      "predict_users": [
+        3,
+        9,
+        18,
+        22
+      ],
+      "source": "mvit_public",
+      "epochs": 60,
+      "seed": 20260909,
+      "arm": "individual",
+      "fold": 3,
+      "calibration": false,
+      "micro_batch": 4,
+      "accumulation": 2,
+      "effective_batch": 8,
+      "loader_workers": 4,
+      "non_blocking": true,
+      "backbone_lr": 0.0001,
+      "head_lr": 0.001
+    },
+    "S_F0_outer": {
+      "kind": "sensor",
+      "train_users": [
+        1,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        17,
+        18,
+        19,
+        21,
+        22,
+        23,
+        24
+      ],
+      "predict_users": [
+        2,
+        16,
+        20
+      ],
+      "source": "mvit_public",
+      "epochs": 60,
+      "seed": 20260909,
+      "arm": "individual",
+      "fold": 0,
+      "calibration": false,
+      "micro_batch": 4,
+      "accumulation": 2,
+      "effective_batch": 8,
+      "loader_workers": 4,
+      "non_blocking": true,
+      "backbone_lr": 0.0001,
+      "head_lr": 0.001
+    },
+    "S_F3_outer": {
+      "kind": "sensor",
+      "train_users": [
+        1,
+        2,
+        3,
+        4,
+        6,
+        9,
+        16,
+        17,
+        18,
+        19,
+        20,
+        22,
+        23,
+        24
+      ],
+      "predict_users": [
+        5,
+        7,
+        8,
+        21
+      ],
+      "source": "mvit_public",
+      "epochs": 60,
+      "seed": 20260909,
+      "arm": "individual",
+      "fold": 3,
+      "calibration": false,
+      "micro_batch": 4,
+      "accumulation": 2,
+      "effective_batch": 8,
+      "loader_workers": 4,
+      "non_blocking": true,
+      "backbone_lr": 0.0001,
+      "head_lr": 0.001
+    }
+  },
+  "remote_data": "/home/featurize/cuhkx_dual_host_20260910_v1/dataset/Small-Model-Track",
+  "budget": {
+    "deadline_unix": null,
+    "local_wall_cap_enabled": false,
+    "max_new_fits": 8,
+    "epochs": 60,
+    "concurrency": 2,
+    "expected_local_minutes": "5-12",
+    "cloud_phase_deadline_unchanged": 1789067199.4188485
+  },
+  "fusion_preregistration": {
+    "outer_folds": [
+      0,
+      3
+    ],
+    "strategies": [
+      "matched fixed video.8_sensor.2",
+      "train-only scalar-temperature convex video/sensor/Thermal",
+      "train-only reliability gate with entropy,top2margin,Depth-IR disagreement and availability"
+    ],
+    "calibration_objective": "inverse-user-count weighted NLL; no heldouter fitting",
+    "temperature_bounds": [
+      0.25,
+      8
+    ],
+    "gate_l2": 0.01,
+    "optimizer": "CPU FP64 LBFGS max500iterations, one initialization, no sweep",
+    "missing_thermal": "mask and renormalize weights; report coverage",
+    "outer_metrics": "fixed final predictions only; effect size,error flips,per-user and uncertainty; no arbitrary count gate",
+    "reference": "Existing R1 five-view805/1094 is a separate historical recipe reference, not the matched control"
+  },
+  "limitations": [
+    "F0/F3 repeatedly used development; no independent Private-score improvement claim",
+    "New seed and microbatch differ from historical R1; matching new outer video/sensor models required",
+    "F2/F4 users may appear only on permitted training/calibration sides of F0/F3, not as separately scored outer folds"
+  ],
+  "Test_access": false,
+  "all18": false,
+  "external_data": false,
+  "kaggle_upload": false,
+  "parent_protocol_sha256": "78EAF0676529C395B9155E4A19BF13C26EBE36B96F0E33D33281B2926816C11F",
+  "amendment": "Before any sensor fit: reused train_sensor explicitly seeds20260909. Register that actual seed for all matching inner/outer sensor fits; video protocol, runtime and active video jobs unchanged.",
+  "scientific_parent_sha256": "D742AB523A27B69AF3AE212C2927B7F0F11C17663A29CF6C1FAECBBFE0C27553",
+  "execution_amended_at_local": "2026-09-11T00:32:35+08:00",
+  "model_source": {
+    "path": "deliverables/mvit_sensor_20260908/sensor_model.py",
+    "sha256": "3EBEB9483A92895D42141405C5B2A5E7EAB962EAFC50EEB8BD97921B7020EC91",
+    "parameters": 337192,
+    "accepted_serialized_checkpoint_strict_load": true
+  },
+  "execution_delta": {
+    "reason": "Cloud import preflight confirmed missing research_runtime.vendor before any S launch. Reuse the existing accepted SensorTemporal definition, and use the free local GPU for already-registered jobs.",
+    "scientific_recipe_changed": false,
+    "host_changed": true,
+    "bitwise_cross_host_retraining_claim": false,
+    "existing_completed_jobs_retrained": false
+  }
+}

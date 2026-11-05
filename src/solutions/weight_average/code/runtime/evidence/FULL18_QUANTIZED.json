@@ -1,0 +1,11 @@
+{
+  "protocol_sha256": "b7447728cbe55b4f4a012a709b2136b69aa7620a7c07f35909b2a5f0cff88a1a",
+  "parent_checkpoint_sha256": "7a5beb6db683507c2143644ca95f21b6f7cd7ef5ef74d28bf9937e533ce01a65",
+  "checkpoint_sha256": "8b2528de0acc031cbb3ed847bb9a968e9a3b32b4bc770250ae43fa96b7259826",
+  "checkpoint_bytes": 86770711,
+  "storage_format": "VIDEOMAE_BASE_ALL_50_WEIGHTS_OUTPUT_INT8_FP32_SCALE_OTHERS_FP16_V1",
+  "quantized_matrices": 50,
+  "reload_exact": true,
+  "no_Test": true,
+  "at_unix": 1789453875.5250814
+}

@@ -1,0 +1,6 @@
+{
+  "format": "ZIP_STORED exact selected checkpoint files plus calibrator; use code/run_inference.py, not torch.load on the outer container",
+  "bytes": 99964493,
+  "sha256": "a1035dc80fcb23fa53733b9599cc9f508d78052344f69ad688fa01ba56517624",
+  "payload_weight_bytes": 99963919
+}

@@ -1,0 +1,4 @@
+primary_solution_key: dual_mirror
+workers: 4
+micro: 4
+network_at_inference: false

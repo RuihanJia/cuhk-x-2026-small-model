@@ -1,0 +1,416 @@
+{
+  "status": "FROZEN_FOR_EXECUTION",
+  "id": "V2_BASE_RAW16_CONTROL4_FIXED_HALF_WEIGHT_AVERAGE_REMAINING_SIX",
+  "registered_at_unix": 1789474431.9419754,
+  "deadline_unix": 1789479831.9419754,
+  "wall_cap_seconds": 5400,
+  "source_authorization_sha256": "7b3fa7a606709e42bf78597d31f133fa88daddc2c7f970d69a7a184c5d197ef7",
+  "explicit_authorization": "Root explicitly approved six remaining fixed-average endpoints plus full source global3/classwise3: cloud5/local1, exact audited local CONTROL4 retained, reuse pilot2. Queue behind successful true-fullframe per host.90min complete budget; zero updates, no Test or scan.",
+  "hypothesis": "One fixed average can damp the endpoint perturbation of matched low-LR warm continuation while retaining one encoder. Prior Control4 classwise927 versus H928 is mixed evidence, not proof averaging improves.",
+  "alpha": 0.5,
+  "arithmetic": "FP32 midpoint of two saved FP16 states, FP16 storage round, original50-matrix INT8 pack, actual dequantized FP32 forward",
+  "optimizer_updates": 0,
+  "seed": 20260915,
+  "storage_format": "VIDEOMAE_BASE_ALL_50_WEIGHTS_OUTPUT_INT8_FP32_SCALE_OTHERS_FP16_V1",
+  "checkpoint_cap_bytes": 87000000,
+  "pose_inputs_sha256": "f302ba5c3e56667017a5c22a08c3c78b1f39df8ff07896ee6b8adff3bf98eb21",
+  "jobs": [
+    {
+      "id": "V2_BASE_SOURCE_F0_INNER1_FIXED_HALF_AVERAGE",
+      "scope": "source",
+      "host": "cloud",
+      "fold": 0,
+      "inner": 1,
+      "records": 860,
+      "train_users": [
+        1,
+        4,
+        5,
+        7,
+        8,
+        17,
+        18,
+        21,
+        22,
+        24
+      ],
+      "held_users": [
+        3,
+        6,
+        9,
+        19,
+        23
+      ],
+      "outer_excluded_users": [
+        2,
+        16,
+        20
+      ],
+      "raw": {
+        "directory": "/home/featurize/cuhkx_motion_transfer_20260911_v1/cloud_rethink_20260914/videomaev2_base_source/output/cloud/V2_BASE_SOURCE_F0_INNER1",
+        "protocol_sha256": "1df24ba7d62fff83021594298c9822782f8edd7c44e17b0e34dc764464126807",
+        "checkpoint_sha256": "74b226b87723b7aaac025ce6f2b170a28397a52f741a95c0adcf520fa62739e7",
+        "frozen_sha256": "0db475961b3b6bfc23722572f017d3e956d75975396c147758c5280fa65afbe3",
+        "split_sha256": "6f8f68f4e7908df2def04f660da9c8b36a03ec92702df2f2439c20325c980af4",
+        "train_done_sha256": "01edb9ed2060b5c1c20dbac6c51a182e0a952becc25cbfa886c5e634ce3ed35e"
+      },
+      "control": {
+        "directory": "/home/featurize/cuhkx_motion_transfer_20260911_v1/cloud_rethink_20260914/v2_window_cloud52910/output/cloud/V2_BASE_SOURCE_F0_INNER1_CONTROL",
+        "protocol_sha256": "eb178555369cdfb0227c98e7cff62970769daab9eeab0d22b94854202a609481",
+        "checkpoint_sha256": "1f8f21379a09a2e19ec5359632d520e72614af6d56d383044ee8e12d1af96516",
+        "frozen_sha256": "dbaf7572f0da8ab8baec2884e239d3533168a124f26aecbfccc918a4629fd423",
+        "split_sha256": "079833007842798dd34ba7def59ca1660d35c9e671cb0d67b14512d5a757380a",
+        "train_done_sha256": "cf33e4e2a762c78d6054557fde4ee9a5ff89de110835bc4c25b9a04a995f21a8",
+        "parent_binding_sha256": "b7601471ac9c7e57050388ea092ea878b4a020e19492ef3786b03138673f8eb9"
+      }
+    },
+    {
+      "id": "V2_BASE_SOURCE_F0_INNER2_FIXED_HALF_AVERAGE",
+      "scope": "source",
+      "host": "cloud",
+      "fold": 0,
+      "inner": 2,
+      "records": 776,
+      "train_users": [
+        1,
+        3,
+        5,
+        6,
+        8,
+        9,
+        18,
+        19,
+        22,
+        23
+      ],
+      "held_users": [
+        4,
+        7,
+        17,
+        21,
+        24
+      ],
+      "outer_excluded_users": [
+        2,
+        16,
+        20
+      ],
+      "raw": {
+        "directory": "/home/featurize/cuhkx_motion_transfer_20260911_v1/cloud_rethink_20260914/videomaev2_base_source/output/cloud/V2_BASE_SOURCE_F0_INNER2",
+        "protocol_sha256": "1df24ba7d62fff83021594298c9822782f8edd7c44e17b0e34dc764464126807",
+        "checkpoint_sha256": "3bcc08a39299c10fe10863d845d41a83378a5b60dab5082a010d4adbdc76a8de",
+        "frozen_sha256": "6d6fbe2da48ae22c8ea57d2db1f1be18ef69c0160ff3f2979c2df7d72c09b89d",
+        "split_sha256": "c8cfb2f1ea2e618c659d46a3cbca7646c54c247dedc3a3141f9956ef6da7431c",
+        "train_done_sha256": "53c151d1a87b9951c19e1826e14e2a9ab431978e3295591e5f5c1dc21f051c41"
+      },
+      "control": {
+        "directory": "/home/featurize/cuhkx_motion_transfer_20260911_v1/cloud_rethink_20260914/v2_window_cloud52910/output/cloud/V2_BASE_SOURCE_F0_INNER2_CONTROL",
+        "protocol_sha256": "eb178555369cdfb0227c98e7cff62970769daab9eeab0d22b94854202a609481",
+        "checkpoint_sha256": "8b30082307aa4bfba9ed6de16b2a3c82db24a6335a69d061c770334f7e7998dc",
+        "frozen_sha256": "3f254f9db71cb217bf2d098b234b64298e97b1fd7a5a57c0c302830afb79935f",
+        "split_sha256": "f8401894a341cb6d145928b40d3a9035e298fb48b3c39390b0c8a1fb5b1d1100",
+        "train_done_sha256": "c4d6017446e4e63492eb375725a72cf26f77c53567eec12d0d69df9569eaa3cb",
+        "parent_binding_sha256": "dbfc69fceed699287221122fec55345704d0987b3fa9cdbf181008897c0be36d"
+      }
+    },
+    {
+      "id": "V2_BASE_SOURCE_F3_INNER0_FIXED_HALF_AVERAGE",
+      "scope": "source",
+      "host": "cloud",
+      "fold": 3,
+      "inner": 0,
+      "records": 786,
+      "train_users": [
+        2,
+        3,
+        6,
+        9,
+        17,
+        18,
+        20,
+        22,
+        24
+      ],
+      "held_users": [
+        1,
+        4,
+        16,
+        19,
+        23
+      ],
+      "outer_excluded_users": [
+        5,
+        7,
+        8,
+        21
+      ],
+      "raw": {
+        "directory": "/home/featurize/cuhkx_motion_transfer_20260911_v1/cloud_rethink_20260914/videomaev2_base_source/output/cloud/V2_BASE_SOURCE_F3_INNER0",
+        "protocol_sha256": "1df24ba7d62fff83021594298c9822782f8edd7c44e17b0e34dc764464126807",
+        "checkpoint_sha256": "21a730f8c15c59a053eefff08617cab3167542fb0d1533feb0fb42dc64d25fd5",
+        "frozen_sha256": "6dc4acac85843f3d93d2fbb7c9856022f562ffa506fcbf66c14907b1d73a3eb0",
+        "split_sha256": "148f00c0ed80d6aa171868d918d2f7d23ec60824b98d593cb62efbd839685001",
+        "train_done_sha256": "a7f561c561205955e4abff31377806035a6a233e07b60e6f5941a05a66c81ee8"
+      },
+      "control": {
+        "directory": "/home/featurize/cuhkx_motion_transfer_20260911_v1/cloud_rethink_20260914/v2_window_cloud52910/output/cloud/V2_BASE_SOURCE_F3_INNER0_CONTROL",
+        "protocol_sha256": "eb178555369cdfb0227c98e7cff62970769daab9eeab0d22b94854202a609481",
+        "checkpoint_sha256": "bac25f79eaf6ed7c1e5be9188c5b4c73e3cc07191f9b7de995417cd09d440515",
+        "frozen_sha256": "6b289a9c5a774dfd1c261bb3a32e3c66bf4d7348c925d7e0c097c63137264659",
+        "split_sha256": "b639a45c32d88cb61a291509435ccf0976f4c097f5e3985a8c1c2f8251fc77df",
+        "train_done_sha256": "5980dacc8b261163a34c1b84b0a2ffce20bb1c8a2ab10c0bc69a85598f54cfff",
+        "parent_binding_sha256": "c4a61789159b0e5ab29f2949527588f213c3c8bbbf84a666ee8652d79a0b8bd5"
+      }
+    },
+    {
+      "id": "V2_BASE_SOURCE_F3_INNER1_FIXED_HALF_AVERAGE",
+      "scope": "source",
+      "host": "cloud",
+      "fold": 3,
+      "inner": 1,
+      "records": 852,
+      "train_users": [
+        1,
+        3,
+        4,
+        9,
+        16,
+        18,
+        19,
+        22,
+        23
+      ],
+      "held_users": [
+        2,
+        6,
+        17,
+        20,
+        24
+      ],
+      "outer_excluded_users": [
+        5,
+        7,
+        8,
+        21
+      ],
+      "raw": {
+        "directory": "/home/featurize/cuhkx_motion_transfer_20260911_v1/cloud_rethink_20260914/videomaev2_base_source/output/cloud/V2_BASE_SOURCE_F3_INNER1",
+        "protocol_sha256": "1df24ba7d62fff83021594298c9822782f8edd7c44e17b0e34dc764464126807",
+        "checkpoint_sha256": "c1ac7c9238633054e36a7341dc5c323f7c191f63be0dd95ea5a86141bcbcf846",
+        "frozen_sha256": "33138a57adebb3b244200c4b44df85d47cd76ee8c95a08ed1882420500ce4171",
+        "split_sha256": "c32f03bd3d93ad21d050641418e29f64fdbe0ac5b771c75031e37301ea1db935",
+        "train_done_sha256": "f239a2bfaf452c414e28023a4dcfd99570517942c26509977eb9039cd3b26ecf"
+      },
+      "control": {
+        "directory": "/home/featurize/cuhkx_motion_transfer_20260911_v1/cloud_rethink_20260914/v2_window_cloud52910/output/cloud/V2_BASE_SOURCE_F3_INNER1_CONTROL",
+        "protocol_sha256": "eb178555369cdfb0227c98e7cff62970769daab9eeab0d22b94854202a609481",
+        "checkpoint_sha256": "6c130745001cb2e2790495ae9c1b34917dff995c19fdfe54e1743a6250c4c56f",
+        "frozen_sha256": "649806856f0e0ebad88042f170ee9f6ab2e9b671bc7e88281691900e930bb8f9",
+        "split_sha256": "dd8926d971c7f838965cab5276c84abf399ab3471ca9d522ce3356809071cfd5",
+        "train_done_sha256": "459f4224251556b48d4676dfe9e83418428a6fdc4030254e2442c3127037b0cf",
+        "parent_binding_sha256": "aab5884d205bf791677b8dbd371d4455a62bcf9f93986dc7df06e03c3cd13daf"
+      }
+    },
+    {
+      "id": "V2_BASE_F0_FIXED_HALF_AVERAGE",
+      "scope": "outer",
+      "host": "cloud",
+      "fold": 0,
+      "inner": null,
+      "records": 512,
+      "train_users": [
+        1,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        17,
+        18,
+        19,
+        21,
+        22,
+        23,
+        24
+      ],
+      "held_users": [
+        2,
+        16,
+        20
+      ],
+      "outer_excluded_users": [],
+      "raw": {
+        "directory": "/home/featurize/cuhkx_motion_transfer_20260911_v1/cloud_rethink_20260914/videomaev2_base/output/cloud/V2_BASE_F0",
+        "protocol_sha256": "d110bc128752d3b136d8751d828da6d1ce3d2e322381ae328aeb9c560dcb98ce",
+        "checkpoint_sha256": "1df42906ea323a5f41f066c5027f14a12d0c4077f7947b9dcb5ec4f4f2b0585b",
+        "frozen_sha256": "15d0acacdcc540f0d71ea7bcbfdf43e30455bf437a1a432a84ff2df6fdea7a4b",
+        "split_sha256": "58046647cff7e295cd4d2eacdbe88c568a0897326eca3c0d3a2aa4b44c1adc90",
+        "train_done_sha256": "dbdae1e50005d238bbcce199f7088bb37ac8acfa2fa8a0d7a7a2ae9738f07ee0"
+      },
+      "control": {
+        "directory": "/home/featurize/cuhkx_motion_transfer_20260911_v1/cloud_rethink_20260914/v2_window_cloud52910/output/cloud/V2_BASE_F0_CONTROL",
+        "protocol_sha256": "eb178555369cdfb0227c98e7cff62970769daab9eeab0d22b94854202a609481",
+        "checkpoint_sha256": "1a5ccf1ec52c3a1e7867a1e071404b694fa57f8117679c892b79ee92ac67e2ce",
+        "frozen_sha256": "e506cb26ba80a0702fb08fc3de8a9e15abcb2ad9d594c97777cd8dbcf5dbe40f",
+        "split_sha256": "c09aad77dce704f204a7576345744d9e9a595ab20132b39e305c7dcfb7c7d84a",
+        "train_done_sha256": "25eeac7281898dbe1f3d8251afbc6187ac28e391b5602f8a2c45d5d9a5abfeca",
+        "parent_binding_sha256": "1e29b0fc55c6f450e0d1642e1887a4991a75de68f74b5bf7a1a65b3c7e3be0f8"
+      }
+    },
+    {
+      "id": "V2_BASE_F3_FIXED_HALF_AVERAGE",
+      "scope": "outer",
+      "host": "local",
+      "fold": 3,
+      "inner": null,
+      "records": 582,
+      "train_users": [
+        1,
+        2,
+        3,
+        4,
+        6,
+        9,
+        16,
+        17,
+        18,
+        19,
+        20,
+        22,
+        23,
+        24
+      ],
+      "held_users": [
+        5,
+        7,
+        8,
+        21
+      ],
+      "outer_excluded_users": [],
+      "raw": {
+        "directory": "C:\\Users\\贾瑞涵\\Documents\\learning\\CUHK——X small_model\\runs\\cloud_rethink_20260914\\videomaev2_base\\cloud\\V2_BASE_F3",
+        "protocol_sha256": "d110bc128752d3b136d8751d828da6d1ce3d2e322381ae328aeb9c560dcb98ce",
+        "checkpoint_sha256": "397a788a796a9b9c3ee471cc590288e5dc75b26d81eeabcbc76a60e18042f359",
+        "frozen_sha256": "f0f3f0ff4ac98cc66c1a1caccba9e7dd884dee8156f34cc8c676e23db7b20ffd",
+        "split_sha256": "24ca28203da3fd676147beb2f36729eef9a27f4e28606346fdc897bcfa9e1553",
+        "train_done_sha256": "fd41aeb6244a49211fb5f1d3046a3d5f1b224328c14ef3ca20eb173e25de2d77"
+      },
+      "control": {
+        "directory": "C:\\Users\\贾瑞涵\\Documents\\learning\\CUHK——X small_model\\runs\\cloud_rethink_20260914\\v2_window_resume\\output\\local_v2\\V2_BASE_F3_CONTROL",
+        "protocol_sha256": "e73be5ffd7ef5adf0ce0a724967c2ee16478ab6da820d6f07f2794323512efaa",
+        "checkpoint_sha256": "d3ad2c7e56389e6d741d71320c0bbd3b016d9e23a2c3802c19ae547db09da6fc",
+        "frozen_sha256": "8c3b77150035867946146b0e6143dcc0a5d25d90ed7381c8f300b647de3be9e3",
+        "split_sha256": "28fab75ed7bb5d2b532006596162cc239b086918eac4942371efa15401ee0847",
+        "train_done_sha256": "c8a0e11b70b79da42f774eadfe41c8609bc857cc442dd199e02ee70141b7247c",
+        "parent_binding_sha256": "24c66e0736c438a8e4edae7de29b32394a43d7ee366a6fb32a31124d4ad00613"
+      }
+    }
+  ],
+  "hosts": {
+    "local": {
+      "output_directory": "C:\\Users\\贾瑞涵\\Documents\\learning\\CUHK——X small_model\\runs\\cloud_rethink_20260914\\v2_base_weight_average_completion\\output\\local",
+      "wall_cap_seconds": 5400,
+      "workers": 2,
+      "eval_micro": 4,
+      "data_root": "D:/Datasets/CUHK-X_Small_Model_Track/Small-Model-Track",
+      "pose_inputs": "C:\\Users\\贾瑞涵\\Documents\\learning\\CUHK——X small_model\\runs\\error_resolution_20260913\\POSE_ADAPTER_INPUTS.json",
+      "authorization_file": "C:\\Users\\贾瑞涵\\Documents\\learning\\CUHK——X small_model\\runs\\cloud_rethink_20260914\\AUTHORIZATION_DUAL_RESOURCE_20260914.json",
+      "input_bindings": {
+        "C:\\Users\\贾瑞涵\\Documents\\learning\\CUHK——X small_model\\runs\\error_resolution_20260913\\POSE_ADAPTER_INPUTS.json": "f302ba5c3e56667017a5c22a08c3c78b1f39df8ff07896ee6b8adff3bf98eb21",
+        "C:\\Users\\贾瑞涵\\Documents\\learning\\CUHK——X small_model\\runs\\cloud_rethink_20260914\\AUTHORIZATION_DUAL_RESOURCE_20260914.json": "7b3fa7a606709e42bf78597d31f133fa88daddc2c7f970d69a7a184c5d197ef7"
+      },
+      "predecessor": {
+        "directory": "C:\\Users\\贾瑞涵\\Documents\\learning\\CUHK——X small_model\\runs\\cloud_rethink_20260914\\v2_true_fullframe_readout\\output\\local",
+        "protocol_sha256": "6cad58a63e3f1148cbaa492c96f70faa3e27d25efacf25920df890bb65af2de2",
+        "success_only": true
+      }
+    },
+    "cloud": {
+      "output_directory": "/home/featurize/cuhkx_motion_transfer_20260911_v1/cloud_rethink_20260914/v2_base_weight_average_completion/output/cloud",
+      "wall_cap_seconds": 5400,
+      "workers": 12,
+      "eval_micro": 4,
+      "data_root": "/home/featurize/cuhkx_dual_host_20260910_v1/dataset/Small-Model-Track",
+      "pose_inputs": "/home/featurize/cuhkx_motion_transfer_20260911_v1/error_resolution_20260913/POSE_ADAPTER_INPUTS.json",
+      "authorization_file": "/home/featurize/cuhkx_motion_transfer_20260911_v1/cloud_rethink_20260914/AUTHORIZATION_DUAL_RESOURCE_20260914.json",
+      "input_bindings": {
+        "/home/featurize/cuhkx_motion_transfer_20260911_v1/error_resolution_20260913/POSE_ADAPTER_INPUTS.json": "f302ba5c3e56667017a5c22a08c3c78b1f39df8ff07896ee6b8adff3bf98eb21",
+        "/home/featurize/cuhkx_motion_transfer_20260911_v1/cloud_rethink_20260914/AUTHORIZATION_DUAL_RESOURCE_20260914.json": "7b3fa7a606709e42bf78597d31f133fa88daddc2c7f970d69a7a184c5d197ef7"
+      },
+      "predecessor": {
+        "directory": "/home/featurize/cuhkx_motion_transfer_20260911_v1/cloud_rethink_20260914/v2_true_fullframe_readout/output/cloud",
+        "protocol_sha256": "8c5a9cbdf0435d4c0175fb5c18b2bc3c849f982fe614f751b9844d90a1063e44",
+        "success_only": true
+      }
+    }
+  },
+  "code_sha256": {
+    "v2_base_weight_average_completion/worker.py": "a022156c9784207fa6bf908351a87a2ed7e9f4290b59ac9a88b08e696184e810",
+    "v2_base_weight_average_completion/data.py": "0879708dca3b7fdc153031c3c1fe405e406f92de615fd69f5758b44acfde4588",
+    "v2_base_weight_average_completion/controller.py": "2c3d2564e00e407655a830d2d4b0679fb872b5ffc2094123ea283a7903f06766",
+    "v2_base_weight_average_completion/resilient_io.py": "07fc8b86d4bda8526a73001b74f63a364552ab5c1b41598631c83764e2fedb3d",
+    "v2_base_weight_average_completion/launch.py": "f6e9bd0a724a561e8d760600762dd0910cda3012289e8c256b2e0eba79f2602d",
+    "v2_base_weight_average_completion/prepare.py": "c413202ab8a86327af5a5b737b18c9875c0bd12d87ba1669eb5113d76245ed8e",
+    "videomaev2_base/model.py": "7a0cd042c729022e0b200d7885ed00a9e11fb0a9264f0a4006bab342475d9c3c",
+    "videomaev2_base/upstream_modeling_finetune.py": "ce9a11ff05c7a1b5085addf6c73b71ffb68933564164f7b250dedad91f6e29b8",
+    "videomaev2_base_quant/codec.py": "a230bb310a22e4ba741cfe6534cda9d267e2ae87e7d437b13e0dd55e92ec3ab6",
+    "v2_window_resume/temporal_data.py": "7c3a89555235916480ab05f8b02791c12f6a87b50f7df6a24da33c10bb750d51",
+    "aux_public_regression_20260914/dynamic_interaction/photometric_candidate/photometric_data_numpy.py": "a8880506aadfebcc309fb20921194a8ed4302ad4530be6206c69805df3c229d3",
+    "../error_resolution_20260913/pose_view_data.py": "b7fdcc001f09a18e5c77e8852bf4274506322076ed0cd527c141a7d5bfaa6a3f",
+    "../error_resolution_20260913/bundle/activity_view_data.py": "62af5c595308d110bda8d5f798e838d4da4a1b8b57bc46357ae0564ce7e6be0f",
+    "../error_resolution_20260913/bundle/motion_video_runtime/data.py": "0711128f0553cca0f5ab11d739693975d36a6ce3eb6a01fca4af866f3a13eec2",
+    "../error_resolution_20260913/bundle/dual_host_runtime/io.py": "f52b1e84a4398331fb735e40f34c0adefddb5842883f6482189941c877bf9ac2",
+    "../error_resolution_20260913/bundle/dual_host_runtime/health.py": "c20f0151f184d0b82c52b77c7c111780cba7ad46959b0b9f6644e3cb09db0c82"
+  },
+  "worker_sha256": "a022156c9784207fa6bf908351a87a2ed7e9f4290b59ac9a88b08e696184e810",
+  "controller_sha256": "2c3d2564e00e407655a830d2d4b0679fb872b5ffc2094123ea283a7903f06766",
+  "evaluation": {
+    "views": "unchanged original five plus early/late midpoint halves",
+    "formula": ".5*mean(first5)+.25*early+.25*late",
+    "source_groups": 6,
+    "outer_arrays_opened": false,
+    "calibration_fits": 4,
+    "comparators": "exact existing raw16 INT8 seven-view and matched CONTROL4 INT8 seven-view source predictions",
+    "report": "source global3/classwise3 same H recipe; all four frozen before outer arrays; compare fixed H928 and CONTROL927. GPU rawreadout has no metrics."
+  },
+  "limits": [
+    "Adaptive development source groups, not fresh confirmation.",
+    "CONTROL4 reset AdamW and LR warmup, not exact16to20 resume.",
+    "This completes fixed eightreadouts, reuses pilot2 and fits originalsource global3/classwise3. Full18 production is separate and not selected here.",
+    "No SWA claim: one uniform two-endpoint average, no cycle/snapshot scan."
+  ],
+  "model_size_projection": {
+    "base_int8_prior_bytes": 86770711,
+    "unchanged_TI_pose_bytes": 12656523,
+    "total_before_calibrator_bytes": 99427234,
+    "no_double_encoder_at_inference": true
+  },
+  "references": [
+    "https://arxiv.org/abs/2203.05482",
+    "https://arxiv.org/abs/1803.05407"
+  ],
+  "cpu_qa_sha256": "418ad710b15750e355fc1e52a51a3545386d6297724feb28a7760c8e889618ca",
+  "pilot_protocol": "C:\\Users\\贾瑞涵\\Documents\\learning\\CUHK——X small_model\\runs\\cloud_rethink_20260914\\v2_base_weight_average_pilot\\protocol.json",
+  "pilot_protocol_sha256": "581299aed3b9e15eb3c68a7fbb670e1980b2775833777807b7617aaa868b5024",
+  "pilot_outputs": {
+    "cloud": "C:\\Users\\贾瑞涵\\Documents\\learning\\CUHK——X small_model\\runs\\cloud_rethink_20260914\\v2_base_weight_average_pilot\\cloud",
+    "local": "C:\\Users\\贾瑞涵\\Documents\\learning\\CUHK——X small_model\\runs\\cloud_rethink_20260914\\v2_base_weight_average_pilot\\output\\local"
+  },
+  "pilot_audit_sha256": "b8880999362ea093547607872b6b2ddd5b400dd6fed063939688db0ebe95fe34",
+  "fusion_recipe": {
+    "branches": [
+      "T",
+      "I",
+      "BaseAverage"
+    ],
+    "global": "original FP64 LBFGS max_iter500,sourceuserbalanced",
+    "classwise": "original H centered3x40 delta,penalty.1,FP64LBFGS500",
+    "outer_after_all_four_frozen": true,
+    "reference_correct": [
+      928,
+      927
+    ]
+  }
+}

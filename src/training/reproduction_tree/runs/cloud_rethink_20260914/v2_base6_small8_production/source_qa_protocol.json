@@ -1,0 +1,22 @@
+{
+  "status": "FROZEN_FOR_EXECUTION",
+  "registered_at_unix": 1789472801.3278043,
+  "deadline_unix": 1789478143.5535793,
+  "source_clip": "2_Comb_hair/1/1-1-1",
+  "data_root": "D:/Datasets/CUHK-X_Small_Model_Track/Small-Model-Track",
+  "no_GPU": true,
+  "no_Test": true,
+  "bindings": {
+    "C:\\Users\\贾瑞涵\\Documents\\learning\\CUHK——X small_model\\runs\\cloud_rethink_20260914\\v2_base6_small8_production\\protocol.json": "46a93b34f311c953e9d2af2a5064a150b3502ee7494c8eff36a40bf11d979beb",
+    "C:\\Users\\贾瑞涵\\Documents\\learning\\CUHK——X small_model\\runs\\cloud_rethink_20260914\\v2_base6_small8_production\\source_qa.py": "f67b1e9fb68aa52eab5a9a93c97785e68b3a98b9eb74353321506641b952abbd",
+    "C:\\Users\\贾瑞涵\\Documents\\learning\\CUHK——X small_model\\runs\\cloud_rethink_20260914\\v2_base6_small8_production\\CALIBRATION_RESULT.json": "8f630f49ed5ab817878f0e7406b43d159d49320d72c0a400f973355e42b2a41d",
+    "C:\\Users\\贾瑞涵\\Documents\\learning\\CUHK——X small_model\\deliverables\\videomaev2_dual_video_rtn6_candidate_20260915\\infer.py": "e331e76b4e76591004e46947aff208a0b5ef222a34ec18ac0671ce78f5c711a0",
+    "C:\\Users\\贾瑞涵\\Documents\\learning\\CUHK——X small_model\\deliverables\\videomaev2_dual_video_rtn6_candidate_20260915\\dual_model.py": "5cf07cbffd99ec69a3e129860e8b0b9d11105da584eca6e144b21a1855cefe6d",
+    "C:\\Users\\贾瑞涵\\Documents\\learning\\CUHK——X small_model\\deliverables\\videomaev2_dual_video_rtn6_candidate_20260915\\release.json": "5fbe6dce12dd8aa360ea88e5232ef473e3eb4f1f3b43f9313d308e9bd95f3ee7",
+    "C:\\Users\\贾瑞涵\\Documents\\learning\\CUHK——X small_model\\deliverables\\videomaev2_dual_video_rtn6_candidate_20260915\\checkpoints\\PAIR.bin": "d434da73c6c507ba1dc7cd671b12c52aba88adba4b48546ba8652d08520c608f",
+    "C:\\Users\\贾瑞涵\\Documents\\learning\\CUHK——X small_model\\deliverables\\videomaev2_dual_video_rtn6_candidate_20260915\\calibrator.json": "d486915bf9e3c76243fd0dd20ec5296b5c0888d654fc633e73578467fabf78bf",
+    "C:\\Users\\贾瑞涵\\Documents\\learning\\CUHK——X small_model\\runs\\cloud_rethink_20260914\\videomaev2_base\\model.py": "7a0cd042c729022e0b200d7885ed00a9e11fb0a9264f0a4006bab342475d9c3c",
+    "C:\\Users\\贾瑞涵\\Documents\\learning\\CUHK——X small_model\\runs\\cloud_rethink_20260914\\videomaev2_small\\model.py": "248948d2c2537060c1aa60239f3df92fd1bbc63a894c1707ff5ec717492f13dd",
+    "C:\\Users\\贾瑞涵\\Documents\\learning\\CUHK——X small_model\\runs\\error_resolution_20260913\\POSE_ADAPTER_INPUTS.json": "f302ba5c3e56667017a5c22a08c3c78b1f39df8ff07896ee6b8adff3bf98eb21"
+  }
+}

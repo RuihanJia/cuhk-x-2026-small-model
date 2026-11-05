@@ -1,0 +1,22 @@
+{
+  "status": "FROZEN_FOR_EXECUTION",
+  "id": "VIDEOMAEV2_BASE_K710_PUBLIC_RETRIEVAL_ONLY",
+  "registered_at_unix": 1789448762.2505815,
+  "deadline_unix": 1789449362.2505815,
+  "wall_cap_seconds": 600,
+  "source_authorization_sha256": "7b3fa7a606709e42bf78597d31f133fa88daddc2c7f970d69a7a184c5d197ef7",
+  "optimizer_updates": 0,
+  "no_GPU": true,
+  "metadata_sha256": "9c50e61e4690e20f80c90ce2fe9dd5accfc348574d9899320ae2ca0ab7a59cd4",
+  "public_repository": "OpenGVLab/VideoMAE2",
+  "commit": "706cc172d65ebd4dedbee3f9c0183a93df9fa125",
+  "base_url": "https://huggingface.co/OpenGVLab/VideoMAE2/resolve/706cc172d65ebd4dedbee3f9c0183a93df9fa125/distill",
+  "files": {
+    "vit_b_k710_dl_from_giant.pth": {
+      "bytes": 173574417,
+      "sha256": "8141a6955e0700d11bf15928fe6d61e5cfe482606fed8cfdddb1b922c0fd88ec"
+    }
+  },
+  "source_review": "Officialdirectlylinkedvision-onlyBaseK710distilled model; authorMODEL_ZOO.mdcurrentread confirmsBase row anddirectHFfilename. SamepinnedHFmetadataalsoincludesBasehash. Retrievalnotadmission; sourceQA/licensebeforetraining.",
+  "no_Test": true
+}

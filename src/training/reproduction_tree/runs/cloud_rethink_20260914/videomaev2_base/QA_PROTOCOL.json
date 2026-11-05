@@ -1,0 +1,27 @@
+{
+  "status": "FROZEN_FOR_EXECUTION",
+  "id": "V2_BASE_TWO_AUTHOR_FP32_FORWARD_BACKWARD_CPU_QA",
+  "registered_at_unix": 1789448915.8633149,
+  "wall_cap_seconds": 360,
+  "optimizer_updates": 0,
+  "no_GPU": true,
+  "source_clip_id": "0_Wash_face/4/1-1-1",
+  "source_users": [
+    4
+  ],
+  "held_users": [
+    2,
+    16,
+    20,
+    5,
+    7,
+    8,
+    21
+  ],
+  "data_root": "D:/Datasets/CUHK-X_Small_Model_Track/Small-Model-Track",
+  "pose_inputs_sha256": "f302ba5c3e56667017a5c22a08c3c78b1f39df8ff07896ee6b8adff3bf98eb21",
+  "worker_sha256": "c820f5159d8e61c31d9a126dbee7188938831c43abe4fd94e12b63c9db580557",
+  "model_sha256": "7a0cd042c729022e0b200d7885ed00a9e11fb0a9264f0a4006bab342475d9c3c",
+  "source_retrieval_sha256": "4399afe3df88bf8389fbc137795b4256b1e53e405abdb43def87c2ee759c31be",
+  "v2_author_sha256": "e2662d2819645659a8b87f2b8880bd8558aa30eeb0a68bd67cffc182dce339c0"
+}

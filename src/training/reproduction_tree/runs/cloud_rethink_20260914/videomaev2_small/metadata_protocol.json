@@ -1,0 +1,10 @@
+{
+  "status": "FROZEN_FOR_EXECUTION",
+  "registered_at_unix": 1789440358.9803565,
+  "deadline_unix": 1789440538.9803565,
+  "wall_cap_seconds": 180,
+  "source_authorization_sha256": "7b3fa7a606709e42bf78597d31f133fa88daddc2c7f970d69a7a184c5d197ef7",
+  "optimizer_updates": 0,
+  "no_GPU": true,
+  "scope": "Read official publicVideoMAE2 metadata and author code toidentifyoneSmallK710distillationcheckpoint"
+}

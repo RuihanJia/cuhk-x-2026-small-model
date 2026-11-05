@@ -1,0 +1,27 @@
+{
+  "status": "FROZEN_FOR_EXECUTION",
+  "id": "V2_SMALL_TWO_AUTHORS_SDPA_AND_BACKWARD_QA",
+  "registered_at_unix": 1789422688.4961953,
+  "wall_cap_seconds": 240,
+  "optimizer_updates": 0,
+  "no_GPU": true,
+  "source_clip_id": "0_Wash_face/4/1-1-1",
+  "source_users": [
+    4
+  ],
+  "held_users": [
+    2,
+    16,
+    20,
+    5,
+    7,
+    8,
+    21
+  ],
+  "data_root": "D:/Datasets/CUHK-X_Small_Model_Track/Small-Model-Track",
+  "pose_inputs_sha256": "f302ba5c3e56667017a5c22a08c3c78b1f39df8ff07896ee6b8adff3bf98eb21",
+  "worker_sha256": "0ecf129f6ca63d93c0ed81ba7efd247854c9414e1a698f0ac18b33e081d20e7b",
+  "model_sha256": "248948d2c2537060c1aa60239f3df92fd1bbc63a894c1707ff5ec717492f13dd",
+  "source_retrieval_sha256": "bbcc58434446a8547132e7e0e96df16dfda59a6eb24938d0afa725a0d44d465c",
+  "v2_author_sha256": "e2662d2819645659a8b87f2b8880bd8558aa30eeb0a68bd67cffc182dce339c0"
+}

@@ -1,0 +1,37 @@
+{
+  "status": "PASS_FIXED_AVERAGE_CPU_QA",
+  "raw_sha256": "335807918a1bc7762bc4ce281c0573291e938ee91dbc2ef0c328ed7f964d10c4",
+  "control_sha256": "d6f4e67acdfee13a93a2a52e247d3b837bbece19f4f89cdffe488622e38ae785",
+  "tensors": 162,
+  "parameters": 86257960,
+  "changed_parent_tensors": 161,
+  "average_FP16_exact": true,
+  "quantized_matrices": 50,
+  "INT8_disk_reload_exact": true,
+  "checkpoint_bytes": 86770391,
+  "qa_checkpoint_sha256": "7a29ef207c8e2d830e2ba9ee9f74acf2a32ded92e2b38b043b3ae02f15d54afe",
+  "new_seven_view_pixels_match_previous": true,
+  "source_clip_id": "0_Wash_face/4/1-1-1",
+  "train_users": [
+    1,
+    2,
+    4,
+    6,
+    16,
+    17,
+    19,
+    20,
+    23,
+    24
+  ],
+  "held_users": [
+    3,
+    9,
+    18,
+    22
+  ],
+  "GPU_forwards": 0,
+  "optimizer_updates": 0,
+  "no_Test": true,
+  "seconds": 2.4209046363830566
+}

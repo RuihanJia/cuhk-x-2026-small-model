@@ -1,0 +1,7 @@
+{
+  "protocol_sha256": "c4951c9ba68e3ee5ea6d8155ff97b0f08ea92bc6aba46379ebf3c38dfe6ccff6",
+  "watch_sha256": "e763409ff4a9d45ac5b7db5b59d1c78b7a02008d3972121fbccacebc5dd752e3",
+  "audit_sha256": "681d0b726021c4c2e91ce91a9447d1fa804f0ea1631726050206399b3faf5362",
+  "calibration_sha256": "0bd911dfd4cc48eda74b81ee9e3e2ca25852e1597d2a7d881dcb394a09976499",
+  "fusion_protocol_sha256": "c701becd0f520614294c17334ed26e8117bc52e6ea78df4bd2ad00cf7a078ae4"
+}

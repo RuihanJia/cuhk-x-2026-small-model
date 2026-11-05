@@ -1,0 +1,108 @@
+{
+  "status": "PASS_FULL18_ORIGINAL_PARENT_AND_CONTROL_INTERFACE",
+  "parent_sha256": "7a5beb6db683507c2143644ca95f21b6f7cd7ef5ef74d28bf9937e533ce01a65",
+  "parent_protocol_sha256": "b7447728cbe55b4f4a012a709b2136b69aa7620a7c07f35909b2a5f0cff88a1a",
+  "source_users": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24
+  ],
+  "source_rows": 2931,
+  "held_rows": 0,
+  "real_pixel_qa": [
+    {
+      "epoch": 1,
+      "augmentation_epoch": 17,
+      "pixels_exact": true,
+      "indices": [
+        0,
+        4,
+        5,
+        9,
+        12,
+        14,
+        17,
+        18,
+        21,
+        23,
+        26,
+        28,
+        33,
+        34,
+        37,
+        40
+      ],
+      "flip": false
+    },
+    {
+      "epoch": 4,
+      "augmentation_epoch": 20,
+      "pixels_exact": true,
+      "indices": [
+        2,
+        3,
+        5,
+        9,
+        12,
+        14,
+        16,
+        19,
+        21,
+        25,
+        26,
+        29,
+        31,
+        36,
+        38,
+        40
+      ],
+      "flip": true
+    }
+  ],
+  "expected_history": [
+    {
+      "epoch": 1,
+      "records": 2931,
+      "updates": 184,
+      "sampling_sha256": "88727f414db23b56b515616a636e1ccbb916f702dfdf09f766f99306474b8977"
+    },
+    {
+      "epoch": 2,
+      "records": 2931,
+      "updates": 368,
+      "sampling_sha256": "a5cffc1df3d05abd42b3e53b59c276ce848c5c1d00f274228ac61310f622fb48"
+    },
+    {
+      "epoch": 3,
+      "records": 2931,
+      "updates": 552,
+      "sampling_sha256": "b66305bffdb6057cd43ce6c8ae917219d5ef40e78330c4fe66fbe7c7a6d8d331"
+    },
+    {
+      "epoch": 4,
+      "records": 2931,
+      "updates": 736,
+      "sampling_sha256": "da0f1d655493e8bf697d64de62441c9e5228f649309e9a0184e7ebbdebd595d1"
+    }
+  ],
+  "training_stack_sha256": "ce74e849227961c6ecabbde65ce7a7ffc58a4e331fb5fafc2a8f48004a0379b9",
+  "data_sha256": "1d456e1cba054a358ca170f4a73a9639c7b4d636eaf4e6c896c956858f8d5eff",
+  "training_science": "freshAdamW4epochs; augmentation epochs17to20; shuffle seed+stageEpoch with persistent workers base-seed draw only first epoch; exact original fit function",
+  "no_Test": true,
+  "no_GPU": true
+}

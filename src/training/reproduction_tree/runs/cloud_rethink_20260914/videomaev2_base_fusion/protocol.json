@@ -1,0 +1,53 @@
+{
+  "status": "FROZEN_FOR_EXECUTION",
+  "id": "VIDEOMAEV2_BASE_TI_FIXED50_SOURCE_GLOBAL_CLASSWISE",
+  "registered_at_unix": 1789451395.7498732,
+  "activation_deadline_unix": 1789454306.7417293,
+  "cpu_fit_cap_seconds": 240,
+  "source_authorization_sha256": "7b3fa7a606709e42bf78597d31f133fa88daddc2c7f970d69a7a184c5d197ef7",
+  "hypothesis": "V2Base raw918 and positive paired errors justify fixed source-only TI/Base fusion after all eight actual50INT8 replays. Compare the same global convex500 and classwise penalty0.1 procedure against frozen V2global900. No new penalty, temperature, branch or class scans.",
+  "source_oof": "C:\\Users\\贾瑞涵\\Documents\\learning\\CUHK——X small_model\\runs\\noon_push_20260914\\production_meta_input\\source_oof_v2.npz",
+  "source_oof_sha256": "343ef60c8677d92a92323bfa51bd258d6310fc758bc5c1a2853563a46232221e",
+  "quant_protocol_sha256": "ffaed6d1e325333f3c631044f716a9042ff48c319d9935586c61ca4d1cd57274",
+  "parent_protocols": {
+    "videomaev2_base": "d110bc128752d3b136d8751d828da6d1ce3d2e322381ae328aeb9c560dcb98ce",
+    "videomaev2_base_source": "1df24ba7d62fff83021594298c9822782f8edd7c44e17b0e34dc764464126807"
+  },
+  "fixed_fusion_protocol_sha256": "46a7e182a76296910775bbc71c6008a62349681e265b4a3b2d14c41649c2ccc3",
+  "current_reference": "C:\\Users\\贾瑞涵\\Documents\\learning\\CUHK——X small_model\\runs\\cloud_rethink_20260914\\videomaev2_fusion\\output\\PAIRED.npz",
+  "current_reference_sha256": "9290ee5a2cd09b232aabe4b60e5d83ac09fb09e76301ef0230cf8058f07c9e24",
+  "outer_users": {
+    "0": [
+      2,
+      16,
+      20
+    ],
+    "3": [
+      5,
+      7,
+      8,
+      21
+    ]
+  },
+  "source_only_optimization": true,
+  "all_four_calibrators_before_outer_arrays": true,
+  "branches": [
+    "T",
+    "I",
+    "Base"
+  ],
+  "no_Test": true,
+  "no_Public_fit": true,
+  "no_GPU": true,
+  "final_promotion_not_automatic": true,
+  "code_sha256": {
+    "frozen_fusion_math.py": "449ff128bb6732ff08e5932396507403c7e5acf832b8696e4f2178ec7a88961a",
+    "videomae_kinetics_fusion/worker.py": "539a9c1aeea274f95ebe0025a475ee9870fcd9c18589d1180f0121a8d0e63015",
+    "aux_public_regression_20260914/dynamic_interaction/photometric_candidate/recovery_independent_audit.py": "ee6a42c5c274a4df7a0d17a319399eef8171b712a075afed5cdd87cdaadc0b83",
+    "videomaev2_base_fusion/worker.py": "c174ceef126ed053f9c15e0d7af10a68742ae999506cf602df9cad80184c8e7c",
+    "videomaev2_base_fusion/classwise3.py": "6fbca9e30fad078a23b5f1b3ce69c156c31e768cbd083b163d113864139fbe3b",
+    "videomaev2_base_fusion/activate.py": "77587fc9ba42026f90850869c4cee4669d867e6689bffeebd1960520813a54e9"
+  },
+  "readout_note": "Current raw outer evidence already observed before this finite source-validation registration; all four calibration states frozen before new quantized outer arrays are read. Adaptive development, not new independent confirmation.",
+  "interface_qa_sha256": "1d8fb711b1fbd1a08584e5c0df82f4159ca33f9bc55d9bba686a06a15308d434"
+}

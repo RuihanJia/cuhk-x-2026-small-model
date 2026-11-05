@@ -1,0 +1,41 @@
+{
+  "status": "FROZEN_FOR_EXECUTION",
+  "registered_at_unix": 1789472907.4943514,
+  "deadline_unix": 1789476507.4943514,
+  "wall_cap_seconds": 3600,
+  "source_authorization_sha256": "7b3fa7a606709e42bf78597d31f133fa88daddc2c7f970d69a7a184c5d197ef7",
+  "hosts": {
+    "local": {
+      "output_directory": "C:\\Users\\\u8d3e\u745e\u6db5\\Documents\\learning\\CUHK\u2014\u2014X small_model\\runs\\cloud_rethink_20260914\\v2_base6_small8_production\\output\\local",
+      "wall_cap_seconds": 3600,
+      "authorization_file": "C:\\Users\\\u8d3e\u745e\u6db5\\Documents\\learning\\CUHK\u2014\u2014X small_model\\runs\\cloud_rethink_20260914\\AUTHORIZATION_DUAL_RESOURCE_20260914.json",
+      "predecessor": {
+        "directory": "C:\\Users\\\u8d3e\u745e\u6db5\\Documents\\learning\\CUHK\u2014\u2014X small_model\\runs\\cloud_rethink_20260914\\v2_gptq6_source_completion\\output\\local",
+        "protocol_sha256": "f04f317a61f359da80188bd9f38079d91a9ac8447ff4276e22f38e7c5221c227",
+        "success_only": true
+      }
+    }
+  },
+  "worker_sha256": "9e8dafdb4491898d6c4f876294a0a1af4e4e63524428564458b2382af8167c53",
+  "controller_sha256": "bb0ef9d0119ee1fc24fac59974e1a7d1a43bfcca038fc6b46c81f58105b68154",
+  "bindings": {
+    "runs\\cloud_rethink_20260914\\v2_base6_small8_production\\protocol.json": "46a93b34f311c953e9d2af2a5064a150b3502ee7494c8eff36a40bf11d979beb",
+    "runs\\cloud_rethink_20260914\\v2_base6_small8_production\\SOURCE_QA_RESULT.json": "73951a0bae0fc9d515310907b206cc3e2525b1a923ad23d9031568769716739e",
+    "runs\\cloud_rethink_20260914\\v2_base6_small8_production\\SOURCE_QA_DONE.json": "11ff9dff8248098925bb9d718d3a21fe0181e3daf38e538788f7ecee394042d1",
+    "runs\\cloud_rethink_20260914\\v2_base6_small8_production\\CALIBRATION_RESULT.json": "8f630f49ed5ab817878f0e7406b43d159d49320d72c0a400f973355e42b2a41d",
+    "runs\\cloud_rethink_20260914\\v2_base6_small8_production\\worker.py": "9e8dafdb4491898d6c4f876294a0a1af4e4e63524428564458b2382af8167c53",
+    "runs\\cloud_rethink_20260914\\v2_base6_small8_production\\controller.py": "bb0ef9d0119ee1fc24fac59974e1a7d1a43bfcca038fc6b46c81f58105b68154",
+    "runs\\cloud_rethink_20260914\\v2_base6_small8_production\\resilient_io.py": "07fc8b86d4bda8526a73001b74f63a364552ab5c1b41598631c83764e2fedb3d",
+    "runs\\cloud_rethink_20260914\\v2_base6_small8_production\\final_audit.py": "61c0e2d5e3a6b13afeee08d57c19a51c8d6e0adac7ceeb41fef107fc510ebfa6",
+    "runs\\cloud_rethink_20260914\\v2_base6_small8_production\\audit_math.py": "f7a88037e8f74ba33e26f60e6902b7a3214887396b32659f3484e17f5b7679b9",
+    "deliverables\\videomaev2_dual_video_rtn6_candidate_20260915\\inference_manifest.json": "86dba0725599f0e5f81399993fe82e10e33834921e02a3b57994402658bb869a",
+    "deliverables\\videomaev2_dual_video_rtn6_candidate_20260915\\release.json": "5fbe6dce12dd8aa360ea88e5232ef473e3eb4f1f3b43f9313d308e9bd95f3ee7",
+    "deliverables\\videomaev2_dual_video_rtn6_candidate_20260915\\calibrator.json": "d486915bf9e3c76243fd0dd20ec5296b5c0888d654fc633e73578467fabf78bf"
+  },
+  "data_root": "D:/Datasets/CUHK-X_Small_Model_Track/Small-Model-Track",
+  "cache_path": "C:\\Users\\\u8d3e\u745e\u6db5\\Documents\\learning\\CUHK\u2014\u2014X small_model\\deliverables\\k400_classwise_candidate_20260915\\submission.csv.logits.npz",
+  "optimizer_updates": 0,
+  "no_Test_labels": true,
+  "no_Public_fit": true,
+  "scope": "Selected complete-source paired model; exact original405 inputs, no upload."
+}

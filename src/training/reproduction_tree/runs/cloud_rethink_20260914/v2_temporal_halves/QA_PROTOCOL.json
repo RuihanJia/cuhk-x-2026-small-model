@@ -1,0 +1,12 @@
+{
+  "status": "FROZEN_FOR_EXECUTION",
+  "registered_at_unix": 1789455284.2401671,
+  "deadline_unix": 1789455464.2401671,
+  "wall_cap_seconds": 180,
+  "data_sha256": "7c3a89555235916480ab05f8b02791c12f6a87b50f7df6a24da33c10bb750d51",
+  "source_inputs_sha256": "f302ba5c3e56667017a5c22a08c3c78b1f39df8ff07896ee6b8adff3bf98eb21",
+  "no_GPU": true,
+  "no_Test": true,
+  "optimizer_updates": 0,
+  "scope": "Source user4 actual image tensors. Fullspan exact equality to existing PoseClips, missing/nonmissing ROI, temporal index formula and short clips. Same previously validated FP32 Base batch4 requires no new model implementation."
+}

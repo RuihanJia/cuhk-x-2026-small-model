@@ -1,0 +1,16 @@
+{
+  "status": "FROZEN_BEFORE_CACHE_AND_C_TRAINING",
+  "builder_sha256": "B57321167766280F04E297C9CD4B9B4AA7349B7A72D13A86A95A1297DEA27E86",
+  "manifest_sha256": "82E73CDD3DC8E72382826C0E1320B80C16BC94148B86765EB62E3734957852A3",
+  "arm_sha256": "270CD36E6B822A5B384A0100C45B62C2E782CE344A6DCBB44DD3D0F9718E7439",
+  "slots": [
+    "WTLA",
+    "WTRA",
+    "WTC",
+    "WTLL",
+    "WTRL"
+  ],
+  "policy": "Keep all original arm tensors exactly. Extras:>=8unique finite timestamps,>=90percent arm-overlap coverage,>=8timestamps inside overlap,maxgap<=max(1second,.2overlap duration),nonconstant axes. Linear interpolation on the original arm time grid. Missing extras zero with explicit per-device mask. No normalizer fitting in cache.",
+  "Test_access": false,
+  "started_unix": 1789045793.5680249
+}

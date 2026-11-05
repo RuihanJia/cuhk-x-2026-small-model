@@ -1,0 +1,16 @@
+{
+  "status": "FROZEN_SOURCE_ONLY_AUDIT_NO_FIT",
+  "protocol_sha256": "581299aed3b9e15eb3c68a7fbb670e1980b2775833777807b7617aaa868b5024",
+  "audit_sha256": "11eb72285ebb1b2f29d05db255afe4b2f97513e2bf6356fb3444a99542f0a70b",
+  "watch_sha256": "66db502c16f9b514bf70a8425e371e3cc9b1a2aa467f0e76cbb2be98f151dd31",
+  "source_bindings": {
+    "raw": {
+      "path": "C:\\Users\\贾瑞涵\\Documents\\learning\\CUHK——X small_model\\runs\\cloud_rethink_20260914\\v2_temporal_halves_fusion\\output\\SOURCE_FITTED.npz",
+      "sha256": "314b53f68dca8dd39b8bdb04196e1598105df182d8ccd9e78700692d1dd72721"
+    },
+    "control": {
+      "path": "C:\\Users\\贾瑞涵\\Documents\\learning\\CUHK——X small_model\\runs\\cloud_rethink_20260914\\v2_window_eval_tail_fusion\\output\\CONTROL_SOURCE.npz",
+      "sha256": "2c11a6d105c48139eee261369bacad4af7a2ea799455c696d4d244619c9a019b"
+    }
+  }
+}

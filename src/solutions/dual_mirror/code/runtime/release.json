@@ -1,0 +1,112 @@
+{
+  "id": "VIDEOMAEV2_DUAL_EQUAL_MIRROR_CLASSWISE4",
+  "training_users": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24
+  ],
+  "checkpoints": {
+    "T": {
+      "path": "checkpoints/T.pt",
+      "sha256": "E12EFA03C2155894B282035A8B1E927512B62C78090F9452EDA04C78B82E0290",
+      "protocol_sha256": "32A7556B1673C95818E48B4DEB1486584F66874688692BBFCC9D717FE7D15A48",
+      "bytes": 6346137
+    },
+    "I": {
+      "path": "checkpoints/I.pt",
+      "sha256": "D761E9664849EE87CD7D6313D7A2733CDDEBED93A50C501CFE46878C71385F53",
+      "protocol_sha256": "548E84E327CD92848557A248F76F7EB7239D117E1F15759719F94693A30AF955",
+      "bytes": 366189
+    },
+    "POSE": {
+      "path": "checkpoints/POSE.pt",
+      "sha256": "BC709BB30A90C8F230B0CB6288CECAF852CAB29A2578752E1A43004A9AD9BDB4",
+      "bytes": 5944197
+    },
+    "PAIR": {
+      "path": "checkpoints/PAIR.bin",
+      "sha256": "d434da73c6c507ba1dc7cd671b12c52aba88adba4b48546ba8652d08520c608f",
+      "bytes": 87303593,
+      "format": "VIDEOMAEV2_BASE6_SMALL8_ALL50_FP32ROWS_OTHERSFP16_V1"
+    }
+  },
+  "optional_geometry_cache": {
+    "path": "geometry_cache.json",
+    "sha256": "FD86010D17D260D846D2FA5054B8C60C1DB31A49A352C8E6EE4645F7919006F1",
+    "provenance": "SameoriginalTest405inputsandsamefrozenposemodel; previousverifiedlabel-freegeometry, no labels or Public use",
+    "origin_manifest_sha256": "8b9358fd89cf3cdd6ff4b2e15f9a79c4eec3a23c7dc29a47438003be002b4a9d"
+  },
+  "optional_sensor_cache_sha256": "0C15D4E3EF9D6D938FD6C836A2D82DF5AB17BD28066A59D23C8DF79DCDEB639C",
+  "provisional": false,
+  "calibration_pending": false,
+  "calibrator_sha256": "a7ab8c67660f29d533843dd33f141c31ed505e404a7c1b1bf663c3aec91fd098",
+  "serialized_weight_bytes": 99963919,
+  "temporal_readout": {
+    "Base": "halfweighted7",
+    "Small": "uniform5"
+  },
+  "selected_fusion": "classwise4",
+  "quantization_method": "RTN_SIGNED_BASE6_SMALL8_ALL50_FP32ROW_SCALE_OTHERS_FP16",
+  "pair_provenance": {
+    "scope": "Full18 CPU storage qualification only; candidate not selected and no Test inference",
+    "base_fp16_sha256": "7a5beb6db683507c2143644ca95f21b6f7cd7ef5ef74d28bf9937e533ce01a65",
+    "small_fp16_sha256": "95b2c1b73690b9b2c7343e79fa5b18a0fe5ce236f875aac9ce646bccbc8e889b",
+    "base_protocol_sha256": "b7447728cbe55b4f4a012a709b2136b69aa7620a7c07f35909b2a5f0cff88a1a",
+    "small_protocol_sha256": "cbec2338d8aa4a9a249067181204670cf44f57abeb2659178d8dd50ea5638861",
+    "train_users": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24
+    ],
+    "held_users": [],
+    "epochs": 16
+  },
+  "source_storage_qa_sha256": "e4e7522e8bc903ba90f8d09d9a9e34e11c271609dc90ed3f20a2fa92fd9ea043",
+  "branch_order": [
+    "T",
+    "I",
+    "Base6",
+    "Small8"
+  ],
+  "optional_original_video_cache_sha256": "a583e3b951948e9f84d3cbf5ac789493549be22284caeae9761755b4be356129",
+  "original_video_cache_pair_sha256": "d434da73c6c507ba1dc7cd671b12c52aba88adba4b48546ba8652d08520c608f",
+  "mirror_readout": {
+    "Base": "0.5 original7 +0.5 mirrored7",
+    "Small": "0.5 original5 +0.5 mirrored5",
+    "final_source_fields": [
+      "TI",
+      "base_mixed",
+      "small_mixed"
+    ]
+  }
+}

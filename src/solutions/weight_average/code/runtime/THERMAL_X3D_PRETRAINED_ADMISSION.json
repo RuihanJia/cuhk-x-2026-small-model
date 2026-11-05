@@ -1,0 +1,16 @@
+{
+  "status": "PASS_WITH_DISCLOSURE",
+  "at": "2026-09-03T15:22:20+08:00",
+  "provenance_record": "evidence\\pretrained\\x3d_m_20260903\\eligibility.json",
+  "provenance_record_sha256": "00FD8045C08D7B0353BB575DE4A32C57752DF797B2D9715E1D145D6F066E7212",
+  "runtime_and_size_result": "runs\\20260903-local-x3d-m-admission\\ADMISSION.json",
+  "runtime_result_sha256": "9226677B7BAE18B0EC5C5137C9E61D8D66ECC8F9D0273010AE12ED39B1D119C6",
+  "architecture": "X3D-M convolutional network, 40-class projection, no LLM in model or prediction",
+  "parameter_count": 3056634,
+  "observed_fp16_bytes": 6346137,
+  "scope": "Same non-commercial competition/research use and mandatory public pretraining disclosure as source record",
+  "new_permission_requested": false,
+  "submission_model_size_must_be_rechecked": true,
+  "runtime_caveat": "avg_pool3d_backward_cuda has no deterministic implementation in this installed PyTorch; seeded warn-only mode preserved, bitwise retraining determinism is not claimed.",
+  "short_probe_caveat": "64 training samples are a runtime feasibility measurement, not sustained thermal certification or a generalization score."
+}

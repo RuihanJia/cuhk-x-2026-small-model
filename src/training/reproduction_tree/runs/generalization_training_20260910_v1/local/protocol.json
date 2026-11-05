@@ -1,0 +1,236 @@
+{
+  "id": "GENERALIZATION-PER-DEVICE-IMU-20260910-V1",
+  "status": "FROZEN_BEFORE_TRAINING",
+  "frozen_at_local": "2026-09-10T21:06:39+08:00",
+  "hypothesis": "Independent rotation already helped arm IMU; shared per-device temporal encoding may exploit the extra measured devices without channel-appending confounds.",
+  "code_sha256": {
+    "generalization_imu_worker.py": "9B554FD292269CAF6FCD5BAAFACACFF64DDCE4FBDC0BA8DC3C966813ABEEFB6E",
+    "native_queue.py": "1E77CF7987BC8F1BDD2A2DBF06949775A3F1A18BC186E6EFBDC30FB7EFD8DF53",
+    "dual_host_runtime/health.py": "C20F0151F184D0B82C52B77C7C111780CBA7AD46959B0B9F6644E3CB09DB0C82",
+    "dual_host_runtime/io.py": "F52B1E84A4398331FB735E40F34C0ADEFDDB5842883F6482189941C877BF9AC2",
+    "dual_host_runtime/__init__.py": "01BA4719C80B6FE911B091A7C05124B64EEECE964E09C058EF8F9805DACA546B",
+    "research_runtime/common.py": "39DB2AC69D62C2876A35DA4B34F770CEFFB1A85A2D3181523A1D818509829C46",
+    "research_runtime/data.py": "AA73CB9CA13EEC1C3EA8C7106F2FE02C04E64DE79D1DA570694B73C07CC66ED7",
+    "research_runtime/metrics.py": "42A951823C8D233CDB195A552509DD1E39F27C457FCCAA2AA64BCC6B6F8F3527",
+    "research_runtime/models.py": "E1E3C9BB3F00B22226C91B4A6B8B8BAFFAB2BF52576673528662EA3008FB8639",
+    "research_runtime/train.py": "88C41CE236B30121EF04A4657ADB324BFAF00ADCAA768D962080277AE417F027",
+    "research_runtime/__init__.py": "0963B67CC66B4C3F5163AFCFE18920895F321B631920A5AD5238548C91911C07"
+  },
+  "folds": {
+    "0": [
+      2,
+      16,
+      20
+    ],
+    "3": [
+      5,
+      7,
+      8,
+      21
+    ]
+  },
+  "jobs": {
+    "IMU_A_F0": {
+      "arm": "A",
+      "fold": 0,
+      "train_users": [
+        1,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        17,
+        18,
+        19,
+        21,
+        22,
+        23,
+        24
+      ],
+      "predict_users": [
+        2,
+        16,
+        20
+      ]
+    },
+    "IMU_A_F3": {
+      "arm": "A",
+      "fold": 3,
+      "train_users": [
+        1,
+        2,
+        3,
+        4,
+        6,
+        9,
+        16,
+        17,
+        18,
+        19,
+        20,
+        22,
+        23,
+        24
+      ],
+      "predict_users": [
+        5,
+        7,
+        8,
+        21
+      ]
+    },
+    "IMU_B_F0": {
+      "arm": "B",
+      "fold": 0,
+      "train_users": [
+        1,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        17,
+        18,
+        19,
+        21,
+        22,
+        23,
+        24
+      ],
+      "predict_users": [
+        2,
+        16,
+        20
+      ]
+    },
+    "IMU_B_F3": {
+      "arm": "B",
+      "fold": 3,
+      "train_users": [
+        1,
+        2,
+        3,
+        4,
+        6,
+        9,
+        16,
+        17,
+        18,
+        19,
+        20,
+        22,
+        23,
+        24
+      ],
+      "predict_users": [
+        5,
+        7,
+        8,
+        21
+      ]
+    },
+    "IMU_C_F0": {
+      "arm": "C",
+      "fold": 0,
+      "train_users": [
+        1,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        17,
+        18,
+        19,
+        21,
+        22,
+        23,
+        24
+      ],
+      "predict_users": [
+        2,
+        16,
+        20
+      ]
+    },
+    "IMU_C_F3": {
+      "arm": "C",
+      "fold": 3,
+      "train_users": [
+        1,
+        2,
+        3,
+        4,
+        6,
+        9,
+        16,
+        17,
+        18,
+        19,
+        20,
+        22,
+        23,
+        24
+      ],
+      "predict_users": [
+        5,
+        7,
+        8,
+        21
+      ]
+    }
+  },
+  "data": {
+    "arm_sha256": "270CD36E6B822A5B384A0100C45B62C2E782CE344A6DCBB44DD3D0F9718E7439",
+    "manifest_sha256": "82E73CDD3DC8E72382826C0E1320B80C16BC94148B86765EB62E3734957852A3",
+    "cohort": "Same2543valid native arm clips for all three arms",
+    "slots": [
+      "WTLA",
+      "WTRA",
+      "WTC",
+      "WTLL",
+      "WTRL"
+    ],
+    "extra_devices": "Original arm tensors remain byte-identical; extras interpolated onto arm-overlap time grid; per-device missing mask. Source builder and concrete cache bound before C starts."
+  },
+  "training": {
+    "seed": 2026091003,
+    "epochs": 60,
+    "batch": 64,
+    "optimizer": "AdamW",
+    "lr": 0.001,
+    "weight_decay": 0.0001,
+    "scheduler": "cosine60_eta1e-5",
+    "label_smoothing": 0.1,
+    "clip_norm": 1.0,
+    "precision": "FP32",
+    "orientation": "Bernoulli.5 per clip;independent HaarSO3 perdevice,constant over time;raw rotation before train-only per-channel standardization; same A/B/C schedule"
+  },
+  "controls": {
+    "A": "historical ArmIMU topology, two-arm acceleration plus orientation",
+    "B": "shared3to64to128to128 temporal encoder; five fixed slots; extras zero;645to128to40 head",
+    "C": "exact B architecture and seed; valid extra measured acceleration included",
+    "capacity": "A and B differ in capacity; B and C exactly same parameter count and initial state"
+  },
+  "budget": {
+    "max_wall_seconds": 10800,
+    "deadline_unix": 1789056399.4188485,
+    "concurrency": 1
+  },
+  "metrics": "Fixed final60epoch serialized FP16 model reconstructed in FP32. No validation during fit. Report paired correctness flips,macroF1,eachuser,uncertainty; no hard improvement-count gate.",
+  "limitations": [
+    "New60epoch seed-matched batch is not an exact reproduction of older100epoch IMU result",
+    "Per-device availability is observed input quality, not identity features; coverage and missingness reported"
+  ],
+  "Test_access": false,
+  "F2_F4_outer": false,
+  "all18": false,
+  "external_data": false
+}

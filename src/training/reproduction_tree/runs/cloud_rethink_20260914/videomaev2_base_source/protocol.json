@@ -1,0 +1,241 @@
+{
+  "status": "FROZEN_FOR_EXECUTION",
+  "id": "VIDEOMAEV2_BASE_REMAINING_FIVE_SOURCE16_CLOUD",
+  "registered_at_unix": 1789450993.9874609,
+  "deadline_unix": 1789453813.9874609,
+  "wall_cap_seconds": 1800,
+  "job_wall_cap_seconds": 660,
+  "source_authorization_sha256": "7b3fa7a606709e42bf78597d31f133fa88daddc2c7f970d69a7a184c5d197ef7",
+  "video_protocol_sha256": "d110bc128752d3b136d8751d828da6d1ce3d2e322381ae328aeb9c560dcb98ce",
+  "original_protocol_sha256": "250df2847b6cd8e66b4fd5c8110648b6872642d810f6170b5e3c55731c41c07c",
+  "pose_inputs_sha256": "f302ba5c3e56667017a5c22a08c3c78b1f39df8ff07896ee6b8adff3bf98eb21",
+  "hypothesis": "Completed matched Base V2 standalone918 versus K400 Base888 and V2 Small882; source sampling exact. Raw Base V2 also18 net above current900 whole model. Complete remaining five original user-isolated source folds to determine actual TI/POSE calibrated complementarity under100MB. Existing local sourceF3inner2 remains same recipe, not repeated. Public0.83582 retained and not used to tune parameters.",
+  "epochs": 16,
+  "optimizer_and_sampling_recipe": "Reuse admitted V2Base exact16 recipe and existing deterministic RAW_CONTROL frames/ROIs/conflict weights; fresh public weights in every fit. No warm-start from outer or from an earlier source fold.",
+  "no_outer_held_numeric_read_before_registration": false,
+  "no_Test": true,
+  "no_sourcecal": true,
+  "no_full18": true,
+  "outer_audit_sha256": "7e59105e62771ce24dba2e641e0b5f2642b7cfa50c0b2c0b962ca1aadea9b68d",
+  "jobs": [
+    {
+      "fold": 0,
+      "inner": 0,
+      "train_users": [
+        3,
+        4,
+        6,
+        7,
+        9,
+        17,
+        19,
+        21,
+        23,
+        24
+      ],
+      "held_users": [
+        1,
+        5,
+        8,
+        18,
+        22
+      ],
+      "outer_excluded_users": [
+        2,
+        16,
+        20
+      ],
+      "id": "V2_BASE_SOURCE_F0_INNER0",
+      "host": "cloud",
+      "split_parent": "POSE_PRIVATE_F0_INNER0"
+    },
+    {
+      "fold": 0,
+      "inner": 1,
+      "train_users": [
+        1,
+        4,
+        5,
+        7,
+        8,
+        17,
+        18,
+        21,
+        22,
+        24
+      ],
+      "held_users": [
+        3,
+        6,
+        9,
+        19,
+        23
+      ],
+      "outer_excluded_users": [
+        2,
+        16,
+        20
+      ],
+      "id": "V2_BASE_SOURCE_F0_INNER1",
+      "host": "cloud",
+      "split_parent": "POSE_PRIVATE_F0_INNER1"
+    },
+    {
+      "fold": 0,
+      "inner": 2,
+      "train_users": [
+        1,
+        3,
+        5,
+        6,
+        8,
+        9,
+        18,
+        19,
+        22,
+        23
+      ],
+      "held_users": [
+        4,
+        7,
+        17,
+        21,
+        24
+      ],
+      "outer_excluded_users": [
+        2,
+        16,
+        20
+      ],
+      "id": "V2_BASE_SOURCE_F0_INNER2",
+      "host": "cloud",
+      "split_parent": "POSE_PRIVATE_F0_INNER2"
+    },
+    {
+      "fold": 3,
+      "inner": 0,
+      "train_users": [
+        2,
+        3,
+        6,
+        9,
+        17,
+        18,
+        20,
+        22,
+        24
+      ],
+      "held_users": [
+        1,
+        4,
+        16,
+        19,
+        23
+      ],
+      "outer_excluded_users": [
+        5,
+        7,
+        8,
+        21
+      ],
+      "id": "V2_BASE_SOURCE_F3_INNER0",
+      "host": "cloud",
+      "split_parent": "POSE_PRIVATE_F3_INNER0"
+    },
+    {
+      "fold": 3,
+      "inner": 1,
+      "train_users": [
+        1,
+        3,
+        4,
+        9,
+        16,
+        18,
+        19,
+        22,
+        23
+      ],
+      "held_users": [
+        2,
+        6,
+        17,
+        20,
+        24
+      ],
+      "outer_excluded_users": [
+        5,
+        7,
+        8,
+        21
+      ],
+      "id": "V2_BASE_SOURCE_F3_INNER1",
+      "host": "cloud",
+      "split_parent": "POSE_PRIVATE_F3_INNER1"
+    }
+  ],
+  "hosts": {
+    "cloud": {
+      "output_directory": "/home/featurize/cuhkx_motion_transfer_20260911_v1/cloud_rethink_20260914/videomaev2_base_source/output/cloud",
+      "wall_cap_seconds": 2700,
+      "workers": 12,
+      "micro_clips": 8,
+      "eval_micro": 4,
+      "data_root": "/home/featurize/cuhkx_dual_host_20260910_v1/dataset/Small-Model-Track",
+      "pose_inputs": "/home/featurize/cuhkx_motion_transfer_20260911_v1/error_resolution_20260913/POSE_ADAPTER_INPUTS.json",
+      "original_protocol": "/home/featurize/cuhkx_motion_transfer_20260911_v1/error_resolution_20260913/POSE_PRIVATE_INNER_PROTOCOL.json",
+      "authorization_file": "/home/featurize/cuhkx_motion_transfer_20260911_v1/cloud_rethink_20260914/AUTHORIZATION_DUAL_RESOURCE_20260914.json",
+      "input_bindings": {
+        "/home/featurize/cuhkx_motion_transfer_20260911_v1/error_resolution_20260913/POSE_ADAPTER_INPUTS.json": "f302ba5c3e56667017a5c22a08c3c78b1f39df8ff07896ee6b8adff3bf98eb21",
+        "/home/featurize/cuhkx_motion_transfer_20260911_v1/error_resolution_20260913/POSE_ADAPTER_PROTOCOL.json": "4ed62e67b16bfb97e799443b5a6364354173465cf7599e6b833d0285f60441e0",
+        "/home/featurize/cuhkx_motion_transfer_20260911_v1/cloud_rethink_20260914/AUTHORIZATION_DUAL_RESOURCE_20260914.json": "7b3fa7a606709e42bf78597d31f133fa88daddc2c7f970d69a7a184c5d197ef7",
+        "/home/featurize/cuhkx_motion_transfer_20260911_v1/error_resolution_20260913/pose_view_data.py": "b7fdcc001f09a18e5c77e8852bf4274506322076ed0cd527c141a7d5bfaa6a3f",
+        "/home/featurize/cuhkx_motion_transfer_20260911_v1/error_resolution_20260913/bundle/activity_view_data.py": "62af5c595308d110bda8d5f798e838d4da4a1b8b57bc46357ae0564ce7e6be0f",
+        "/home/featurize/cuhkx_motion_transfer_20260911_v1/error_resolution_20260913/bundle/motion_video_runtime/__init__.py": "0f780850ed074f04e7ace53ffc19d98b8ce6631baf62ad14d7a8cf7a05815c31",
+        "/home/featurize/cuhkx_motion_transfer_20260911_v1/error_resolution_20260913/bundle/motion_video_runtime/data.py": "0711128f0553cca0f5ab11d739693975d36a6ce3eb6a01fca4af866f3a13eec2",
+        "/home/featurize/cuhkx_motion_transfer_20260911_v1/error_resolution_20260913/bundle/research_runtime/common.py": "39db2ac69d62c2876a35da4b34f770ceffb1a85a2d3181523a1d818509829c46",
+        "/home/featurize/cuhkx_motion_transfer_20260911_v1/error_resolution_20260913/bundle/dual_host_runtime/__init__.py": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+        "/home/featurize/cuhkx_motion_transfer_20260911_v1/error_resolution_20260913/bundle/dual_host_runtime/io.py": "f52b1e84a4398331fb735e40f34c0adefddb5842883f6482189941c877bf9ac2",
+        "/home/featurize/cuhkx_motion_transfer_20260911_v1/error_resolution_20260913/bundle/dual_host_runtime/health.py": "c20f0151f184d0b82c52b77c7c111780cba7ad46959b0b9f6644e3cb09db0c82",
+        "/home/featurize/cuhkx_motion_transfer_20260911_v1/error_resolution_20260913/POSE_PRIVATE_INNER_PROTOCOL.json": "250df2847b6cd8e66b4fd5c8110648b6872642d810f6170b5e3c55731c41c07c",
+        "/home/featurize/cuhkx_motion_transfer_20260911_v1/cloud_rethink_20260914/videomaev2_base/vit_b_k710_dl_from_giant.pth": "8141a6955e0700d11bf15928fe6d61e5cfe482606fed8cfdddb1b922c0fd88ec",
+        "/home/featurize/cuhkx_motion_transfer_20260911_v1/cloud_rethink_20260914/videomaev2_base/upstream_modeling_finetune.py": "ce9a11ff05c7a1b5085addf6c73b71ffb68933564164f7b250dedad91f6e29b8",
+        "/home/featurize/cuhkx_motion_transfer_20260911_v1/cloud_rethink_20260914/videomaev2_base/upstream_LICENSE": "bc8f60ee50544b2dd70b4bc90e22de503aa23b317d284046a479811f2e06f396",
+        "/home/featurize/cuhkx_motion_transfer_20260911_v1/cloud_rethink_20260914/videomaev2_base/source_v2.py": "e2662d2819645659a8b87f2b8880bd8558aa30eeb0a68bd67cffc182dce339c0",
+        "/home/featurize/cuhkx_motion_transfer_20260911_v1/cloud_rethink_20260914/videomaev2_base/license.txt": "fc1e582f4c782c5e11a9a0718fcf7514e237c1677a166ca9d9733012b9121c10",
+        "/home/featurize/cuhkx_motion_transfer_20260911_v1/cloud_rethink_20260914/videomaev2_base/metadata.json": "9c50e61e4690e20f80c90ce2fe9dd5accfc348574d9899320ae2ca0ab7a59cd4",
+        "/home/featurize/cuhkx_motion_transfer_20260911_v1/cloud_rethink_20260914/videomaev2_base/QA_RESULT.json": "9ba8f1fdaaa357fa392f73094a1fefc18a33edff534d4212d823cb78793cd487",
+        "/home/featurize/cuhkx_motion_transfer_20260911_v1/cloud_rethink_20260914/videomaev2_base/ADMISSION.json": "a32372948498f5e7f28d0e1560d407b136ec5a41718669330f0c40392091dd77",
+        "/home/featurize/cuhkx_motion_transfer_20260911_v1/cloud_rethink_20260914/videomaev2_base/protocol.json": "d110bc128752d3b136d8751d828da6d1ce3d2e322381ae328aeb9c560dcb98ce"
+      },
+      "predecessor": {
+        "directory": "/home/featurize/cuhkx_motion_transfer_20260911_v1/cloud_rethink_20260914/videomaev2_base/output/cloud",
+        "protocol_sha256": "d110bc128752d3b136d8751d828da6d1ce3d2e322381ae328aeb9c560dcb98ce",
+        "success_only": true
+      },
+      "job_wall_cap_seconds": 660,
+      "inner_protocol": "/home/featurize/cuhkx_motion_transfer_20260911_v1/error_resolution_20260913/POSE_PRIVATE_INNER_PROTOCOL.json"
+    }
+  },
+  "code_sha256": {
+    "aux_public_regression_20260914/dynamic_interaction/photometric_candidate/photometric_data_numpy.py": "a8880506aadfebcc309fb20921194a8ed4302ad4530be6206c69805df3c229d3",
+    "videomaev2_base/model.py": "7a0cd042c729022e0b200d7885ed00a9e11fb0a9264f0a4006bab342475d9c3c",
+    "videomaev2_base/worker.py": "ce74e849227961c6ecabbde65ce7a7ffc58a4e331fb5fafc2a8f48004a0379b9",
+    "videomaev2_base/controller.py": "ee4a23801b5172fdeae1495be2a708e8bf6fc6d5b2140d8784369156e3689182",
+    "videomaev2_base/resilient_io.py": "07fc8b86d4bda8526a73001b74f63a364552ab5c1b41598631c83764e2fedb3d",
+    "videomaev2_base_source/worker.py": "3957b6b08ddf020d06ed85232eecbe39efa132d07cd83e72df145d4172e9d86d",
+    "videomaev2_base_source/controller.py": "b844e06a059094c5fe334def828e95cb7100205be5893f68161586274c5589e6"
+  },
+  "worker_sha256": "3957b6b08ddf020d06ed85232eecbe39efa132d07cd83e72df145d4172e9d86d",
+  "controller_sha256": "b844e06a059094c5fe334def828e95cb7100205be5893f68161586274c5589e6",
+  "efficiency_amendment": "Cloud12 ratherthan8persistentworkers;16CPUcores/53GBfreeRAM verified. Exact same deterministic sampling/optimizer/effective16batch; CPUloadingconcurrencyonly.",
+  "resource_note": "Five cloud jobs, maximum45minutes including queue; each660seconds training cap, host/globalbound also covers held evaluation and transport. No new instance or old budget reset. Local previously registered sourceF3inner2 continues independently.",
+  "source_sampling_assertion": "Base V2 fit already supports source-subset cardinality; no code rewriting at runtime.",
+  "existing_local_source": {
+    "protocol_sha256": "d110bc128752d3b136d8751d828da6d1ce3d2e322381ae328aeb9c560dcb98ce",
+    "job": "V2_BASE_SOURCE_F3_INNER2",
+    "output_directory": "C:\\Users\\贾瑞涵\\Documents\\learning\\CUHK——X small_model\\runs\\cloud_rethink_20260914\\videomaev2_base\\output\\local\\V2_BASE_SOURCE_F3_INNER2"
+  },
+  "no_new_outer_held_evaluation": true,
+  "production_not_registered": true
+}

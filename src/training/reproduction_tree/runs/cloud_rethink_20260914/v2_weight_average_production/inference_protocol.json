@@ -1,0 +1,44 @@
+{
+  "status": "FROZEN_FOR_EXECUTION",
+  "registered_at_unix": 1789475871.4833322,
+  "deadline_unix": 1789481138.7053843,
+  "wall_cap_seconds": 5400,
+  "source_authorization_sha256": "7b3fa7a606709e42bf78597d31f133fa88daddc2c7f970d69a7a184c5d197ef7",
+  "hosts": {
+    "local": {
+      "output_directory": "C:\\Users\\\u8d3e\u745e\u6db5\\Documents\\learning\\CUHK\u2014\u2014X small_model\\runs\\cloud_rethink_20260914\\v2_weight_average_production\\output\\local",
+      "wall_cap_seconds": 5400,
+      "authorization_file": "C:\\Users\\\u8d3e\u745e\u6db5\\Documents\\learning\\CUHK\u2014\u2014X small_model\\runs\\cloud_rethink_20260914\\AUTHORIZATION_DUAL_RESOURCE_20260914.json",
+      "predecessor": {
+        "directory": "C:\\Users\\\u8d3e\u745e\u6db5\\Documents\\learning\\CUHK\u2014\u2014X small_model\\runs\\cloud_rethink_20260914\\v2_mean6_small8_source\\output\\local",
+        "protocol_sha256": "7368614e8514b7f83b83fd6edc370d1eff3bb54699f9cd0e8144305f9fefe516",
+        "protocol_file": "C:\\Users\\\u8d3e\u745e\u6db5\\Documents\\learning\\CUHK\u2014\u2014X small_model\\runs\\cloud_rethink_20260914\\v2_mean6_small8_source\\protocol.json",
+        "success_status": "COMPLETE_MEAN6_SMALL8_BASE_READOUT",
+        "success_only": true
+      }
+    }
+  },
+  "worker_sha256": "44c85df7098094bb57558d86a7af42f38c84547ad673dac24052c9704a4c9308",
+  "controller_sha256": "7c8b51deff2583c8ab3e17c05ae59ef1061657bb50d7d59dc8b8dcc22f0f782b",
+  "bindings": {
+    "runs\\cloud_rethink_20260914\\v2_weight_average_production\\protocol.json": "1b025bd0229b935e285db8202ff7620cabf3bcc93234d2cf63b79de192f56325",
+    "runs\\cloud_rethink_20260914\\v2_weight_average_production\\SOURCE_QA_RESULT.json": "9cd0cac77fa5ef917ec81792428c46caefcdf495a63e5d2ecfc2d2fd24324a44",
+    "runs\\cloud_rethink_20260914\\v2_weight_average_production\\SOURCE_QA_DONE.json": "cd5302da6cc2b14889f66ceba6036b84f5895d209c113008b5aa0242e695055e",
+    "runs\\cloud_rethink_20260914\\v2_weight_average_production\\CALIBRATION_RESULT.json": "5ebd92c9f32c5486736f6cd036c37217612137192628621782a851112f118c1e",
+    "runs\\cloud_rethink_20260914\\v2_weight_average_production\\worker.py": "44c85df7098094bb57558d86a7af42f38c84547ad673dac24052c9704a4c9308",
+    "runs\\cloud_rethink_20260914\\v2_weight_average_production\\controller.py": "7c8b51deff2583c8ab3e17c05ae59ef1061657bb50d7d59dc8b8dcc22f0f782b",
+    "runs\\cloud_rethink_20260914\\v2_weight_average_production\\resilient_io.py": "07fc8b86d4bda8526a73001b74f63a364552ab5c1b41598631c83764e2fedb3d",
+    "runs\\cloud_rethink_20260914\\v2_weight_average_production\\final_audit.py": "7412f3a23cf3854697aab68c51a6d3229f47bfb2ea3e36854830ec956dfd8948",
+    "runs\\cloud_rethink_20260914\\v2_weight_average_production\\audit_math.py": "adc802e28ecade3c6c6a3bbf29cd076726d5ae95f28803c38c47f7ac06e624b7",
+    "deliverables\\videomaev2_weight_average_candidate_20260915\\inference_manifest.json": "6d107b3edb0c9b3aba8ee98da4fc7ca56723b0e0501628cacec2ad028543ac2f",
+    "deliverables\\videomaev2_weight_average_candidate_20260915\\release.json": "f6f827158dd0daf18f845012afb78d0d1eedd2bd582d0dc3395d5515f2f3c167",
+    "deliverables\\videomaev2_weight_average_candidate_20260915\\calibrator.json": "c6d579fa3dba06a51eb986313b14ce529027c9fb6d2d59368fb90b32e8de2eb6",
+    "runs\\cloud_rethink_20260914\\v2_mean6_small8_source\\protocol.json": "7368614e8514b7f83b83fd6edc370d1eff3bb54699f9cd0e8144305f9fefe516"
+  },
+  "data_root": "D:/Datasets/CUHK-X_Small_Model_Track/Small-Model-Track",
+  "cache_path": "C:\\Users\\\u8d3e\u745e\u6db5\\Documents\\learning\\CUHK\u2014\u2014X small_model\\deliverables\\k400_classwise_candidate_20260915\\submission.csv.logits.npz",
+  "optimizer_updates": 0,
+  "no_Test_labels": true,
+  "no_Public_fit": true,
+  "scope": "Selected fixed average singleBase; actual405, no upload"
+}

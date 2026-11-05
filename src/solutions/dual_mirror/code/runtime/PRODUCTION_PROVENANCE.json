@@ -1,0 +1,23 @@
+{
+  "production_protocol_sha256": "cec2861160aa67b15ff0333f91a82966eec55912723a6997974d333b3663da65",
+  "source_qa_protocol_sha256": "b2da5e9133a5c5ae1381c28dd45cfd96aa774b7d21b851b035ed7fe91b9cedb8",
+  "source_qa_result_sha256": "0ec57f8f72f2aa182c296e4e910eefa8674e0d7032fab242b9f1f8a229c21fc0",
+  "source_validation": {
+    "result": "C:\\Users\\\u8d3e\u745e\u6db5\\Documents\\learning\\CUHK\u2014\u2014X small_model\\runs\\cloud_rethink_20260914\\v2_mirror_dual_source\\fusion\\output\\RESULT.json",
+    "result_sha256": "7389eb1e6cdf9e00cfb5dbce307469a8858860d7de7a0e2f0c9e7677f5d69d58",
+    "audit": "C:\\Users\\\u8d3e\u745e\u6db5\\Documents\\learning\\CUHK\u2014\u2014X small_model\\runs\\cloud_rethink_20260914\\v2_mirror_dual_source\\fusion\\output\\INDEPENDENT_AUDIT.json",
+    "audit_sha256": "2881a5b216386a94bdad4f05ceb0099b38c778358f14349b138a46ac8ad5d2e4",
+    "candidate_correct": 933,
+    "baseline_correct": 931,
+    "n": 1094,
+    "fix": 12,
+    "harm": 10,
+    "source_fit_not_validation": true,
+    "Public_score_unknown": true
+  },
+  "selected_fusion": "classwise4",
+  "mirror_ratio": 0.5,
+  "original_video_cache_sha256": "a583e3b951948e9f84d3cbf5ac789493549be22284caeae9761755b4be356129",
+  "public_score_unknown": true,
+  "no_Test_labels": true
+}

@@ -1,0 +1,28 @@
+team_name: han jack72819
+track: small
+primary_verification_submission_id: '56258094'
+primary_solution_key: dual_mirror
+selected_final_submissions:
+- selection_slot: 1
+  submission_id: '56258094'
+  kaggle_filename: submission_videomaev2_dual_mirror_20260915.csv
+  submitted_at_utc: '2026-09-15T15:41:15.160Z'
+  public_score: 0.88059
+  private_score: 0.87745
+  csv_sha256: 0eda9483701b92a25ccc8cce284acf4b12cf2af4df974ede4f425461091210fc
+  model_checkpoint_config_mapping:
+    solution_key: dual_mirror
+    model_or_checkpoint: artifacts/dual_mirror/model.pth
+    configuration: src/solutions/dual_mirror/code/runtime/release.json
+- selection_slot: 2
+  submission_id: '56258110'
+  kaggle_filename: submission_videomaev2_weight_average_20260915.csv
+  submitted_at_utc: '2026-09-15T15:42:00.710Z'
+  public_score: 0.86069
+  private_score: 0.86274
+  csv_sha256: 8eff0fd318b966dfa420e92040a7351715f504a46c5cf0c5cec40b55b65f1c2d
+  model_checkpoint_config_mapping:
+    solution_key: weight_average
+    model_or_checkpoint: artifacts/weight_average/model.pth
+    configuration: src/solutions/weight_average/code/runtime/release.json
+notes: Selected competition submissions. Output SHA-256 values identify the corresponding CSVs.

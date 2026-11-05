@@ -1,0 +1,22 @@
+{
+  "status": "FROZEN_FOR_EXECUTION",
+  "registered_at_unix": 1789485949.4132023,
+  "deadline_unix": 1789489420.4903157,
+  "source_clip": "2_Comb_hair/1/1-1-1",
+  "no_GPU": true,
+  "no_Test": true,
+  "bindings": {
+    "C:\\Users\\贾瑞涵\\Documents\\learning\\CUHK——X small_model\\runs\\cloud_rethink_20260914\\v2_mirror_dual_production\\protocol.json": "cec2861160aa67b15ff0333f91a82966eec55912723a6997974d333b3663da65",
+    "C:\\Users\\贾瑞涵\\Documents\\learning\\CUHK——X small_model\\runs\\cloud_rethink_20260914\\v2_mirror_dual_production\\source_qa.py": "bd638662f5fbb0dfa23182ce8aaa33d3067ab826bc5ceaf0c63467a3924995ff",
+    "C:\\Users\\贾瑞涵\\Documents\\learning\\CUHK——X small_model\\runs\\cloud_rethink_20260914\\v2_mirror_dual_production\\CALIBRATION_RESULT.json": "93592597fcf80712adc88b327713ee39ddf639d7f98079a198aa5f12954ebf2e",
+    "C:\\Users\\贾瑞涵\\Documents\\learning\\CUHK——X small_model\\deliverables\\videomaev2_dual_mirror_candidate_20260915\\infer.py": "52d897d338fe9a109148b9c7e25699c8c146fb9e061b01ce0b2629a350c1accc",
+    "C:\\Users\\贾瑞涵\\Documents\\learning\\CUHK——X small_model\\deliverables\\videomaev2_dual_mirror_candidate_20260915\\mirror_predict.py": "9d5b11f827be9b0bcb69c648f87875bc7f38cfc378fc55770248cd8d5baa155e",
+    "C:\\Users\\贾瑞涵\\Documents\\learning\\CUHK——X small_model\\deliverables\\videomaev2_dual_mirror_candidate_20260915\\dual_model.py": "5cf07cbffd99ec69a3e129860e8b0b9d11105da584eca6e144b21a1855cefe6d",
+    "C:\\Users\\贾瑞涵\\Documents\\learning\\CUHK——X small_model\\deliverables\\videomaev2_dual_mirror_candidate_20260915\\release.json": "d02ac880c8469e3075e1ed37e47ee72976dd9e5576da15c2346874b9c10bf84f",
+    "C:\\Users\\贾瑞涵\\Documents\\learning\\CUHK——X small_model\\deliverables\\videomaev2_dual_mirror_candidate_20260915\\checkpoints\\PAIR.bin": "d434da73c6c507ba1dc7cd671b12c52aba88adba4b48546ba8652d08520c608f",
+    "C:\\Users\\贾瑞涵\\Documents\\learning\\CUHK——X small_model\\deliverables\\videomaev2_dual_mirror_candidate_20260915\\calibrator.json": "a7ab8c67660f29d533843dd33f141c31ed505e404a7c1b1bf663c3aec91fd098",
+    "C:\\Users\\贾瑞涵\\Documents\\learning\\CUHK——X small_model\\runs\\cloud_rethink_20260914\\v2_mirror_dual_source\\CPU_QA.json": "3897cd63ad4e27fb130ddd403c70c777485f2599b537647413efa8a2e681b934",
+    "C:\\Users\\贾瑞涵\\Documents\\learning\\CUHK——X small_model\\runs\\cloud_rethink_20260914\\v2_mirror_dual_production_preparation\\CACHE_ROUTE_QA.json": "1faa45c1a49f64b4f018d465bd9d9c34336f426ef2ad453915701c6d141ad6f7",
+    "C:\\Users\\贾瑞涵\\Documents\\learning\\CUHK——X small_model\\runs\\error_resolution_20260913\\POSE_ADAPTER_INPUTS.json": "f302ba5c3e56667017a5c22a08c3c78b1f39df8ff07896ee6b8adff3bf98eb21"
+  }
+}
